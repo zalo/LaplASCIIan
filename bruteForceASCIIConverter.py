@@ -1,6 +1,5 @@
 import numpy as np
 import cv2
-import math
 import pyperclip
 from PIL import ImageFont, ImageDraw, Image
 
@@ -26,7 +25,7 @@ img = img.astype(np.float) * (density / 255)
 finalImage = np.zeros(img.shape, dtype=np.uint8)
 
 # Specify the font to create
-asciiCharacters = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+asciiCharacters = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~" #0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
 font_size_x = int(font_size_y * 0.45)
 consolas = ImageFont.truetype("./Consolas.ttf", int(font_size_y*0.8))
 
@@ -59,7 +58,7 @@ for y in range(int(img.shape[0] / font_size_y)):
     outputArt += asciiCharacters[minIndex]
   outputArt += '\r\n'
 
-
+# Copy ASCII Art to clipboard
 pyperclip.copy(outputArt)
 
 # Display finished images...
