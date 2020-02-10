@@ -3,7 +3,8 @@ import cv2
 import pyperclip
 from PIL import ImageFont, ImageDraw, Image
 
-laplacian = True
+laplacian = False
+alphanumerics = False
 density = 17
 font_size_y = 18
 blur = 5 # Must Be Odd
@@ -25,7 +26,9 @@ img = img.astype(np.float) * (density / 255)
 finalImage = np.zeros(img.shape, dtype=np.uint8)
 
 # Specify the font to create
-asciiCharacters = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~" #0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+asciiCharacters = " !\"'*+,-./:;<=>\^_`|~"
+if alphanumerics:
+  asciiCharacters += "?#$%&@0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()[]]{}"
 font_size_x = int(font_size_y * 0.45)
 consolas = ImageFont.truetype("./Consolas.ttf", int(font_size_y*0.8))
 
@@ -39,7 +42,7 @@ for i in range(len(asciiCharacters)):
   asciiAtlas[i] = np.array(im_p)
 
   laplacianAtlas[i] = cv2.Laplacian(asciiAtlas[i], cv2.CV_8U) if laplacian else np.copy(asciiAtlas[i])
-  laplacianAtlas[i] = cv2.GaussianBlur(laplacianAtlas[i], (3, 3), 0)
+  #laplacianAtlas[i] = cv2.GaussianBlur(laplacianAtlas[i], (3, 3), 0)
   laplacianAtlas[i] = laplacianAtlas[i].astype(np.float)
   cv2.normalize(laplacianAtlas[i], laplacianAtlas[i], 255, 0, cv2.NORM_MINMAX)
 
@@ -64,6 +67,6 @@ pyperclip.copy(outputArt)
 # Display finished images...
 cv2.imshow("Original Image", oimg)
 cv2.imshow("Processed Image", img)
-cv2.imshow("ASCII Atlas", laplacianAtlas[33])
+cv2.imshow("ASCII Atlas", laplacianAtlas[12])
 cv2.imshow("ASCII Image", finalImage)
 cv2.waitKey(0)
