@@ -29,6 +29,8 @@
       function convertGif() {
         document.querySelector('.result').textContent = "Submitting Conversion Request...";
         return fetch('https://lapl-ascii-an.now.sh/api', {
+          method: 'POST', // or 'PUT'
+          headers: { 'Content-Type': 'application/plain',},
           body: document.getElementById("gifURL").nodeValue,
         })
           .then ((response) =>   response.text())
