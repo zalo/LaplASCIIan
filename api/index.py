@@ -8,7 +8,7 @@ import codecs
 
 e1 = cv2.getTickCount()
 
-def getGifFrames(gifURL, font_size_y=40, alphanumerics=False, density=25):
+def getGifFrames(gifURL, font_size_y=40, framerate = 15, alphanumerics=False, density=25):
   global e1
   message = "Something went wrong with loading the gif..."
   try:
@@ -16,7 +16,7 @@ def getGifFrames(gifURL, font_size_y=40, alphanumerics=False, density=25):
     im = imageio.mimread(imageio.core.urlopen(gifURL).read(), '.gif')
     print( "Loading the Image finished at: "+str((cv2.getTickCount() - e1)/cv2.getTickFrequency()) +" seconds")
     #message = "The gif you submitted loaded successfully and it has "+str(len(im))+" frames!"
-    message = convertGifToASCII(im, font_size_y, alphanumerics, density)
+    message = convertGifToASCII(im, font_size_y, framerate, alphanumerics, density)
   except Exception as e:
     message = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
   finally:
@@ -24,13 +24,14 @@ def getGifFrames(gifURL, font_size_y=40, alphanumerics=False, density=25):
 
   return message
 
-def convertGifToASCII(im, font_size_y=40, alphanumerics=False, density=25):
+def convertGifToASCII(im, font_size_y=40, framerate = 15, alphanumerics=False, density=25):
   global e1
   laplacian = False
   blur = 5 # Must Be Odd
   
-  font_size_y = int(font_size_y)
-  density = int(density)
+  font_size_y   = int(font_size_y)
+  density       = int(density)
+  framerate     = int(framerate)
   alphanumerics = bool(alphanumerics)
 
   # Specify the font to create
@@ -97,15 +98,7 @@ def convertGifToASCII(im, font_size_y=40, alphanumerics=False, density=25):
     # Append the ASCII Frame to the List...
     asciiFrames.append(outputArt)
     print("Frame "+ str(index) + " finished at: " + str((cv2.getTickCount() - e1) / cv2.getTickFrequency()) + " seconds")
-  #
-  #  # Display finished images...
-  #  cv2.imshow("Original Image", oimg)
-  #  cv2.imshow("Processed Image", img)
-  #  cv2.imshow("ASCII Image", finalImage)
-  #
-  #  # Increment to the next frame
-  #  index = (index+1) % len(im)
-  #
+
   # Begin Constructing the Animated SVG
   
   # Create the Header and skeleton structure
@@ -118,7 +111,7 @@ def convertGifToASCII(im, font_size_y=40, alphanumerics=False, density=25):
   # Create the CSS Instructions for flashing frames
   svgBody += '  <style type="text/css">\r\n    @keyframes flash { 0%                   { visibility: visible; }\r\n                       '+str(100.0/len(asciiFrames))+'%  { visibility: hidden;  } }\r\n'
   
-  frameTime = 0.03333
+  frameTime = 1.0/framerate
   animationTime = frameTime * len(asciiFrames)
   for frame in range(len(asciiFrames)):
     svgBody += '    #Frame-'+str(frame)+' { animation: flash '+str(animationTime)+'s linear infinite ' + str(frameTime * frame) + 's;   }\r\n'
@@ -142,7 +135,7 @@ class handler(BaseHTTPRequestHandler):
       body = json.loads(self.rfile.read(int(self.headers.get("Content-Length"))).decode("utf-8"))
 
       # Construct a Reponse
-      message = getGifFrames(str(body["gifURL"]), body["font_size_y"], body["alphanumerics"], body["density"])
+      message = getGifFrames(str(body["gifURL"]), body["font_size_y"], body["framerate"], body["alphanumerics"], body["density"])
     except Exception as e:
       message = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
       print(message)
