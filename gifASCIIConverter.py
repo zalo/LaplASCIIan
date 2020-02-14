@@ -7,7 +7,7 @@ import codecs
 laplacian = False
 alphanumerics = False
 density = 25
-font_size_y = 50
+font_size_y = 20
 blur = 5 # Must Be Odd
 
 # Specify the font to create
@@ -29,9 +29,8 @@ for i in range(len(asciiCharacters)):
   laplacianAtlas[i] = laplacianAtlas[i].astype(np.float)
   cv2.normalize(laplacianAtlas[i], laplacianAtlas[i], 255, 0, cv2.NORM_MINMAX)
 
-
 # Load the original image
-im = imageio.mimread('pullup.gif')
+im = imageio.mimread(imageio.core.urlopen('https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif').read(), '.gif')
 
 index = 0
 curImage = im[0]
