@@ -29,6 +29,10 @@ def convertGifToASCII(im, font_size_y=40, alphanumerics=False, density=25):
   laplacian = False
   blur = 5 # Must Be Odd
   
+  font_size_y = int(font_size_y)
+  density = int(density)
+  alphanumerics = bool(alphanumerics)
+
   # Specify the font to create
   asciiCharacters = " !\"'*+,-./:;=\^_`|~"
   if alphanumerics:

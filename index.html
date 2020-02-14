@@ -37,6 +37,8 @@
            "starting_frame": 0
         });
 
+        console.log(jsonToPost);
+
         return fetch('https://lapl-ascii-an.now.sh/api', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', "Content-Length": jsonToPost.length },
