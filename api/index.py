@@ -67,8 +67,6 @@ def convertGifToASCII(im, font_size_y = 40, alphanumerics = False, density = 25)
     img = img.astype(np.float) * (density / 255)
   
     finalImage = np.zeros(img.shape, dtype=np.uint8)
-
-    print("Beginning Frame "+str(index))
     
     # Construct a frame's string...
     outputArt = '  <text id="Frame-'+str(index)+'" font-family="monospace" visibility="hidden">\r\n'
@@ -99,27 +97,27 @@ def convertGifToASCII(im, font_size_y = 40, alphanumerics = False, density = 25)
   #  # Increment to the next frame
   #  index = (index+1) % len(im)
   #
-  ## Begin Constructing the Animated SVG
-  #
-  ## Create the Header and skeleton structure
-  #svgBody = '<?xml version="1.0" encoding="utf-8"?>\r\n<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="'+str(im[0].shape[1])+'" height="'+str(im[0].shape[0])+'">\r\n'
-  #
-  ## Create the frames...
-  #for frame in asciiFrames:
-  #  svgBody += frame
-  #
-  ## Create the CSS Instructions for flashing frames
-  #svgBody += '  <style type="text/css">\r\n    @keyframes flash { 0%                   { visibility: visible; }\r\n                       '+str(100.0/len(asciiFrames))+'%  { visibility: hidden;  } }\r\n'
-  #
-  #frameTime = 0.03333
-  #animationTime = frameTime * len(asciiFrames)
-  #for frame in range(len(asciiFrames)):
-  #  svgBody += '    #Frame-'+str(frame)+' { animation: flash '+str(animationTime)+'s linear infinite ' + str(frameTime * frame) + 's;   }\r\n'
-  #
-  #svgBody += '  </style>\r\n</svg>'
-  #return svgBody
+  # Begin Constructing the Animated SVG
+  
+  # Create the Header and skeleton structure
+  svgBody = '<?xml version="1.0" encoding="utf-8"?>\r\n<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="'+str(im[0].shape[1])+'" height="'+str(im[0].shape[0])+'">\r\n'
+  
+  # Create the frames...
+  for frame in asciiFrames:
+    svgBody += frame
+  
+  # Create the CSS Instructions for flashing frames
+  svgBody += '  <style type="text/css">\r\n    @keyframes flash { 0%                   { visibility: visible; }\r\n                       '+str(100.0/len(asciiFrames))+'%  { visibility: hidden;  } }\r\n'
+  
+  frameTime = 0.03333
+  animationTime = frameTime * len(asciiFrames)
+  for frame in range(len(asciiFrames)):
+    svgBody += '    #Frame-'+str(frame)+' { animation: flash '+str(animationTime)+'s linear infinite ' + str(frameTime * frame) + 's;   }\r\n'
+  
+  svgBody += '  </style>\r\n</svg>'
+  return svgBody
   #print("Hey these work too")
-  return "We have "+str(len(asciiFrames)) +" of ASCII Art ready..."
+  #return "We have "+str(len(asciiFrames)) +" of ASCII Art ready..."
 
 class handler(BaseHTTPRequestHandler):
 
