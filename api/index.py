@@ -11,7 +11,7 @@ def getGifFrames(gifURL, font_size_y=20, alphanumerics=False, density=25):
   try:
     im = imageio.mimread(imageio.core.urlopen(gifURL).read(), '.gif')
     #message = "The gif you submitted loaded successfully and it has "+str(len(im))+" frames!"
-    message = getGifFrames(im, font_size_y, alphanumerics, density)
+    message = convertGifToASCII(im, font_size_y, alphanumerics, density)
   except Exception as e:
     message = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
   finally:
