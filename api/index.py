@@ -6,7 +6,7 @@ from PIL import ImageFont, ImageDraw, Image
 import imageio
 import codecs
 
-def getGifFrames(gifURL, font_size_y=20, alphanumerics=False, density=25):
+def getGifFrames(gifURL, font_size_y=40, alphanumerics=False, density=25):
   message = "Something went wrong with loading the gif..."
   try:
     im = imageio.mimread(imageio.core.urlopen(gifURL).read(), '.gif')
@@ -19,7 +19,7 @@ def getGifFrames(gifURL, font_size_y=20, alphanumerics=False, density=25):
 
   return message
 
-def convertGifToASCII(im, font_size_y = 20, alphanumerics = False, density = 25):
+def convertGifToASCII(im, font_size_y = 40, alphanumerics = False, density = 25):
   laplacian = False
   blur = 5 # Must Be Odd
   
@@ -67,6 +67,8 @@ def convertGifToASCII(im, font_size_y = 20, alphanumerics = False, density = 25)
     img = img.astype(np.float) * (density / 255)
   
     finalImage = np.zeros(img.shape, dtype=np.uint8)
+
+    print("Beginning Frame "+str(index))
     
     # Construct a frame's string...
     outputArt = '  <text id="Frame-'+str(index)+'" font-family="monospace" visibility="hidden">\r\n'
@@ -87,6 +89,7 @@ def convertGifToASCII(im, font_size_y = 20, alphanumerics = False, density = 25)
   
     # Append the ASCII Frame to the List...
     asciiFrames.append(outputArt)
+    print("Got through frame "+str(index))
   #
   #  # Display finished images...
   #  cv2.imshow("Original Image", oimg)
