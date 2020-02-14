@@ -14,7 +14,7 @@
 
     <!-- FONT
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -33,16 +33,24 @@
       <div class="row">
         <div class="column" style="margin-top: 2.5%">
           <h1><a id="LaplASCIIan Title"></a>LaplASCIIan</h1>
-          <p>LaplASCIIan is a small utility that converts Animated Gifs into Animated SVGs.<br>
+          <p>LaplASCIIan is a small utility that converts Animated Gifs into Animated SVGs.</p>
 
-          <h6><a id="Test_URL" href="https://lapl-ascii-an.now.sh/api">Test Here</a></h6>
+          <p class="result">Loading LaplASCIIan...</p>
+          <script>
+            function main() {
+              return fetch('https://lapl-ascii-an.now.sh/api')
+                .then ((response) =>   response.text())
+                .then ((data    ) =>   document.querySelector('.result').textContent = result)
+                .catch((error   ) => { document.querySelector('.result').textContent = error; 
+                                       document.querySelector('.result').style.color = "#FF0000"; })
+            }
+            main();
+          </script>
 
-          <h5><a id="Open_Source" href="https://github.com/zalo/LaplASCIIan"></a>Open Source</h5>
+          <h5><a id="Open_Source" href="https://github.com/zalo/LaplASCIIan">Open Source</a></h5>
           <p><a href="https://github.com/zalo/LaplASCIIan">The source code to LaplASCIIan is available under the MIT License at Github.</a></p>
           <h5><a id="Credits" href=""></a>Credits</h5>
           <p>LaplASCIIan is based on OpenCV, PIL, ImageIO, and <a href="http://getskeleton.com/">Skeleton.css</a>.</p>
-          <h5><a id="Debug_Event_Stream"></a>Errors</h5>
-          <pre class="code-example"><code class="code-example-body prettyprint" id="Events">LaplASCIIan Errors may appear here upon connection.</code></pre>
       </div>
     </div>
   </div>
