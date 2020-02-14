@@ -67,26 +67,26 @@ def convertGifToASCII(im, font_size_y = 20, alphanumerics = False, density = 25)
     img = img.astype(np.float) * (density / 255)
   
     finalImage = np.zeros(img.shape, dtype=np.uint8)
-  #  
-  #  # Construct a frame's string...
-  #  outputArt = '  <text id="Frame-'+str(index)+'" font-family="monospace" visibility="hidden">\r\n'
-  #  for y in range(int(img.shape[0] / font_size_y)):
-  #    outputArt += '    <tspan dy="1.2em" x="0">'
-  #    for x in range(int(img.shape[1] / font_size_x)):
-  #      imgSlice = img[y * font_size_y : (y + 1) * font_size_y, x * font_size_x : (x + 1) * font_size_x]
-  #      
-  #      # Broadcast imgSlice to the font array size...
-  #      alphabetSubtractions = np.abs((laplacianAtlas/255) - imgSlice)
-  #      alphabetSimilarities = np.sum(alphabetSubtractions, axis=(1, 2))
-  #      minIndex             = np.argmin(alphabetSimilarities)
-  #
-  #      finalImage[y * font_size_y : (y + 1) * font_size_y, x * font_size_x : (x + 1) * font_size_x] = asciiAtlas[minIndex]
-  #      outputArt += asciiCharacters[minIndex]
-  #    outputArt += '</tspan>\r\n'
-  #  outputArt += '  </text>\r\n'
-  #
-  #  # Append the ASCII Frame to the List...
-  #  asciiFrames.append(outputArt)
+    
+    # Construct a frame's string...
+    outputArt = '  <text id="Frame-'+str(index)+'" font-family="monospace" visibility="hidden">\r\n'
+    for y in range(int(img.shape[0] / font_size_y)):
+      outputArt += '    <tspan dy="1.2em" x="0">'
+      for x in range(int(img.shape[1] / font_size_x)):
+        imgSlice = img[y * font_size_y : (y + 1) * font_size_y, x * font_size_x : (x + 1) * font_size_x]
+        
+        # Broadcast imgSlice to the font array size...
+        alphabetSubtractions = np.abs((laplacianAtlas/255) - imgSlice)
+        alphabetSimilarities = np.sum(alphabetSubtractions, axis=(1, 2))
+        minIndex             = np.argmin(alphabetSimilarities)
+  
+        finalImage[y * font_size_y : (y + 1) * font_size_y, x * font_size_x : (x + 1) * font_size_x] = asciiAtlas[minIndex]
+        outputArt += asciiCharacters[minIndex]
+      outputArt += '</tspan>\r\n'
+    outputArt += '  </text>\r\n'
+  
+    # Append the ASCII Frame to the List...
+    asciiFrames.append(outputArt)
   #
   #  # Display finished images...
   #  cv2.imshow("Original Image", oimg)
@@ -115,8 +115,8 @@ def convertGifToASCII(im, font_size_y = 20, alphanumerics = False, density = 25)
   #
   #svgBody += '  </style>\r\n</svg>'
   #return svgBody
-  print("Hey these work too")
-  return "Looped through Frames!"
+  #print("Hey these work too")
+  return "We have "+str(len(asciiFrames)) +" of ASCII Art ready..."
 
 class handler(BaseHTTPRequestHandler):
 

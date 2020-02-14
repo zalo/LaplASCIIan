@@ -43,7 +43,7 @@
           mode: 'no-cors', // This allows me to make off-site requests...
         })
           .then ((response) =>   response.text())
-          .then ((data    ) => { document.querySelector('.result').innerHTML   = data;
+          .then ((data    ) => { document.querySelector('.result').textContent = data;
                                  document.querySelector('.result').style.color = "#000000"; })
           .catch((error   ) => { document.querySelector('.result').textContent = error; 
                                  document.querySelector('.result').style.color = "#FF0000"; })
