@@ -6,10 +6,15 @@ from PIL import ImageFont, ImageDraw, Image
 import imageio
 import codecs
 
+e1 = cv2.getTickCount()
+
 def getGifFrames(gifURL, font_size_y=40, alphanumerics=False, density=25):
+  global e1
   message = "Something went wrong with loading the gif..."
   try:
+    e1 = cv2.getTickCount()
     im = imageio.mimread(imageio.core.urlopen(gifURL).read(), '.gif')
+    print( "Loading the Image finished at: "+str((cv2.getTickCount() - e1)/cv2.getTickFrequency()) +" seconds")
     #message = "The gif you submitted loaded successfully and it has "+str(len(im))+" frames!"
     message = convertGifToASCII(im, font_size_y, alphanumerics, density)
   except Exception as e:
@@ -19,7 +24,8 @@ def getGifFrames(gifURL, font_size_y=40, alphanumerics=False, density=25):
 
   return message
 
-def convertGifToASCII(im, font_size_y = 40, alphanumerics = False, density = 25):
+def convertGifToASCII(im, font_size_y=40, alphanumerics=False, density=25):
+  global e1
   laplacian = False
   blur = 5 # Must Be Odd
   
@@ -42,10 +48,9 @@ def convertGifToASCII(im, font_size_y = 40, alphanumerics = False, density = 25)
     laplacianAtlas[i] = laplacianAtlas[i].astype(np.float)
     cv2.normalize(laplacianAtlas[i], laplacianAtlas[i], 255, 0, cv2.NORM_MINMAX)
 
-  #return "ASCII atlas Created!"
-  #index = 0
-  curImage = im[0]
+  print("Creating the Character Atlas finished at: " + str((cv2.getTickCount() - e1) / cv2.getTickFrequency()) + " seconds")
   
+  curImage = im[0]
   asciiFrames = []
   
   #while (index is not len(im)-1):
@@ -87,7 +92,7 @@ def convertGifToASCII(im, font_size_y = 40, alphanumerics = False, density = 25)
   
     # Append the ASCII Frame to the List...
     asciiFrames.append(outputArt)
-    print("Got through frame "+str(index))
+    print("Frame "+ str(index) + " finished at: " + str((cv2.getTickCount() - e1) / cv2.getTickFrequency()) + " seconds")
   #
   #  # Display finished images...
   #  cv2.imshow("Original Image", oimg)
@@ -115,6 +120,7 @@ def convertGifToASCII(im, font_size_y = 40, alphanumerics = False, density = 25)
     svgBody += '    #Frame-'+str(frame)+' { animation: flash '+str(animationTime)+'s linear infinite ' + str(frameTime * frame) + 's;   }\r\n'
   
   svgBody += '  </style>\r\n</svg>'
+  print("SVG Body returned at: " + str((cv2.getTickCount() - e1) / cv2.getTickFrequency()) + " seconds")
   return svgBody
   #print("Hey these work too")
   #return "We have "+str(len(asciiFrames)) +" of ASCII Art ready..."
