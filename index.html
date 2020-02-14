@@ -31,7 +31,7 @@
 
         let jsonToPost = JSON.stringify({
            "gifURL": document.getElementById("gifURL").value, 
-           "alphanumerics": true, 
+           "alphanumerics": false, 
            "density": document.getElementById("fillFactor").value, 
            "font_size_y": document.getElementById("textSize").value,
            "framerate": document.getElementById("framerate").value,
@@ -65,8 +65,8 @@
           <p>LaplASCIIan is a small utility that converts Animated Gifs into Animated SVGs.</p>
 
           <!-- <label for="gifURL">gif URL:</label> -->
-          URL: <input type="text" id="gifURL" name="gifURL" value="https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif">
-          - Text Coarseness: <input type="number" id="textSize" name="textSize" value="45" min="5" max="60">
+          URL: <input type="text" id="gifURL" name="gifURL" value="https://media0.giphy.com/media/3oKIPtjElfqwMOTbH2/giphy.gif">
+          - Text Coarseness: <input type="number" id="textSize" name="textSize" value="15" min="5" max="60">
           - Framerate: <input type="number" id="framerate" name="framerate" value="15" min="1" max="240">
           - Fill Factor: <input type="number" id="fillFactor" name="fillFactor" value="15" min="1" max="100">
           <input type="button" value="Convert" onclick="convertGif()">
