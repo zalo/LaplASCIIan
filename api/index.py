@@ -6,10 +6,17 @@ from PIL import ImageFont, ImageDraw, Image
 import imageio
 import codecs
 
-def getGifFrames(gifURL, font_size_y = 20, alphanumerics = False, density = 25):
-  im = imageio.mimread(imageio.core.urlopen(gifURL).read(), '.gif')
+def getGifFrames(gifURL, font_size_y=20, alphanumerics=False, density=25):
+  message = "Something went wrong with loading the gif..."
+  try:
+    im = imageio.mimread(imageio.core.urlopen(gifURL).read(), '.gif')
+    message = "The gif you submitted loaded successfully and it has "+str(len(im))+" frames!"
+  except Exception as e:
+    message = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
+  finally:
+    return message
 
-  return "The gif you submitted loaded successfully and it has "+str(len(im))+" frames!"
+  return message
 
 def convertGifToASCII(gifURL, font_size_y = 20, alphanumerics = False, density = 25):
   laplacian = False
@@ -122,10 +129,8 @@ class handler(BaseHTTPRequestHandler):
       body = json.loads(self.rfile.read(int(self.headers.get("Content-Length"))).decode("utf-8"))
 
       # Construct a Reponse
-      #message = getGifFrames(str(body["gifURL"]), body["font_size_y"], body["alphanumerics"], body["density"])
+      message = getGifFrames(str(body["gifURL"]), body["font_size_y"], body["alphanumerics"], body["density"])
 
-      message = "Something, anything, please..."
-      self.wfile.write(message.encode())
     except Exception as e:
       message = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
     finally:
