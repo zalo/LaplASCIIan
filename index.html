@@ -40,7 +40,7 @@
             function main() {
               return fetch('https://lapl-ascii-an.now.sh/api')
                 .then ((response) =>   response.text())
-                .then ((data    ) =>   document.querySelector('.result').textContent = result)
+                .then ((data    ) =>   document.querySelector('.result').textContent = data)
                 .catch((error   ) => { document.querySelector('.result').textContent = error; 
                                        document.querySelector('.result').style.color = "#FF0000"; })
             }
