@@ -119,6 +119,7 @@ def convertGifToASCII(im, font_size_y = 20, alphanumerics = False, density = 25)
 class handler(BaseHTTPRequestHandler):
 
   def do_POST(self):
+    self.send_response(200)
     self.send_header('Content-type','text/plain')
     self.end_headers()
 
@@ -129,12 +130,9 @@ class handler(BaseHTTPRequestHandler):
 
       # Construct a Reponse
       message = getGifFrames(str(body["gifURL"]), body["font_size_y"], body["alphanumerics"], body["density"])
-
-      self.send_response(200)
     except Exception as e:
       message = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
       print(message)
-      self.send_response(500)
     finally:
       self.wfile.write(message.encode())
 
