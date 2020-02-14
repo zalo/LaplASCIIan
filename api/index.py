@@ -6,6 +6,11 @@ from PIL import ImageFont, ImageDraw, Image
 import imageio
 import codecs
 
+def getGifFrames(gifURL, font_size_y = 20, alphanumerics = False, density = 25):
+  im = imageio.mimread(imageio.core.urlopen(gifURL).read(), '.gif')
+
+  return "The gif you submitted loaded successfully and it has "+str(len(im))+" frames!"
+
 def convertGifToASCII(gifURL, font_size_y = 20, alphanumerics = False, density = 25):
   laplacian = False
   blur = 5 # Must Be Odd
@@ -107,21 +112,20 @@ def convertGifToASCII(gifURL, font_size_y = 20, alphanumerics = False, density =
 class handler(BaseHTTPRequestHandler):
 
   def do_POST(self):
+    self.send_response(200)
+    self.send_header('Content-type','text/plain')
+    self.end_headers()
+
     message = "Conversion Failed for mysterious reasons... try something different?"
     try:
       # Attempt to read the body of the request
       body = json.loads(self.rfile.read(int(self.headers.get("Content-Length"))).decode("utf-8"))
 
       # Construct a Reponse
-      message = convertGifToASCII(str(body["gifURL"]), body["font_size_y"], body["alphanumerics"], body["density"])
-      
-      self.send_response(200)
-      self.send_header('Content-type','text/plain')
-      self.end_headers()
+      message = getGifFrames(str(body["gifURL"]), body["font_size_y"], body["alphanumerics"], body["density"])
+
     except Exception as e:
       message = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
-
-      self.send_response(400)
     finally:
       self.wfile.write(message.encode())
 
