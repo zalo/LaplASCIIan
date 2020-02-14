@@ -42,30 +42,31 @@ def convertGifToASCII(im, font_size_y = 20, alphanumerics = False, density = 25)
     laplacianAtlas[i] = laplacianAtlas[i].astype(np.float)
     cv2.normalize(laplacianAtlas[i], laplacianAtlas[i], 255, 0, cv2.NORM_MINMAX)
 
-  return "ASCII atlas Created!"
+  #return "ASCII atlas Created!"
   #index = 0
-  #curImage = im[0]
-  #
-  #asciiFrames = []
-  #
-  #while (not ((cv2.waitKey(1) & 0xFF == ord('q')) or (index is len(im)-1))):
-  #  # Take all indices that don't equal zero and composite them onto the current image (HACK)
-  #  #mask = im[index] != 0
-  #  #curImage[mask] = im[index][mask]
-  #  curImage = im[index]
-  #  
-  #  # Convert To Gray
-  #  oimg = cv2.cvtColor(curImage, cv2.COLOR_BGR2GRAY)
-  #  
-  #  # These settings also control the fidelity of the output image...
-  #  img = cv2.GaussianBlur(oimg, (blur, blur), 0)
-  #  img = cv2.bilateralFilter(img, blur, 20, 20)
-  #  img = cv2.Laplacian(img, cv2.CV_8U)
-  #  img = cv2.bilateralFilter(img, blur, 200, 200)
-  #  img = cv2.normalize(img, img, 255, 0, cv2.NORM_MINMAX)
-  #  img = img.astype(np.float) * (density / 255)
-  #
-  #  finalImage = np.zeros(img.shape, dtype=np.uint8)
+  curImage = im[0]
+  
+  asciiFrames = []
+  
+  #while (index is not len(im)-1):
+  for index in range(len(im)):
+    # Take all indices that don't equal zero and composite them onto the current image (HACK)
+    #mask = im[index] != 0
+    #curImage[mask] = im[index][mask]
+    curImage = im[index]
+    
+    # Convert To Gray
+    oimg = cv2.cvtColor(curImage, cv2.COLOR_BGR2GRAY)
+    
+    # These settings also control the fidelity of the output image...
+    img = cv2.GaussianBlur(oimg, (blur, blur), 0)
+    img = cv2.bilateralFilter(img, blur, 20, 20)
+    img = cv2.Laplacian(img, cv2.CV_8U)
+    img = cv2.bilateralFilter(img, blur, 200, 200)
+    img = cv2.normalize(img, img, 255, 0, cv2.NORM_MINMAX)
+    img = img.astype(np.float) * (density / 255)
+  
+    finalImage = np.zeros(img.shape, dtype=np.uint8)
   #  
   #  # Construct a frame's string...
   #  outputArt = '  <text id="Frame-'+str(index)+'" font-family="monospace" visibility="hidden">\r\n'
@@ -114,6 +115,8 @@ def convertGifToASCII(im, font_size_y = 20, alphanumerics = False, density = 25)
   #
   #svgBody += '  </style>\r\n</svg>'
   #return svgBody
+  print("Hey these work too")
+  return "Looped through Frames!"
 
 class handler(BaseHTTPRequestHandler):
 
