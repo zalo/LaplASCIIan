@@ -122,8 +122,10 @@ class handler(BaseHTTPRequestHandler):
       body = json.loads(self.rfile.read(int(self.headers.get("Content-Length"))).decode("utf-8"))
 
       # Construct a Reponse
-      message = getGifFrames(str(body["gifURL"]), body["font_size_y"], body["alphanumerics"], body["density"])
+      #message = getGifFrames(str(body["gifURL"]), body["font_size_y"], body["alphanumerics"], body["density"])
 
+      message = "Something, anything, please..."
+      self.wfile.write(message.encode())
     except Exception as e:
       message = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
     finally:
