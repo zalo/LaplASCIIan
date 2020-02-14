@@ -12,7 +12,7 @@ class handler(BaseHTTPRequestHandler):
       body = json.loads(self.rfile.read(int(self.headers.get("Content-Length"))).decode("utf-8"))
 
       # Construct a Reponse
-      message = 'Hello from Python from a ZEIT Now Serverless Function!   You submitted: ' + str(body)  # +" with a density of " + body["density"]
+      message = 'Hello from Python from a ZEIT Now Serverless Function!   You submitted: ' + str(body["gifURL"])  +" with a density of " + str(body["density"])
       
       self.send_response(200)
       self.send_header('Content-type','text/plain')
