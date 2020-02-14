@@ -10,7 +10,8 @@ def getGifFrames(gifURL, font_size_y=20, alphanumerics=False, density=25):
   message = "Something went wrong with loading the gif..."
   try:
     im = imageio.mimread(imageio.core.urlopen(gifURL).read(), '.gif')
-    message = "The gif you submitted loaded successfully and it has "+str(len(im))+" frames!"
+    #message = "The gif you submitted loaded successfully and it has "+str(len(im))+" frames!"
+    message = getGifFrames(im, font_size_y, alphanumerics, density)
   except Exception as e:
     message = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
   finally:
@@ -18,7 +19,7 @@ def getGifFrames(gifURL, font_size_y=20, alphanumerics=False, density=25):
 
   return message
 
-def convertGifToASCII(gifURL, font_size_y = 20, alphanumerics = False, density = 25):
+def convertGifToASCII(im, font_size_y = 20, alphanumerics = False, density = 25):
   laplacian = False
   blur = 5 # Must Be Odd
 
@@ -40,9 +41,6 @@ def convertGifToASCII(gifURL, font_size_y = 20, alphanumerics = False, density =
     #laplacianAtlas[i] = cv2.GaussianBlur(laplacianAtlas[i], (3, 3), 0)
     laplacianAtlas[i] = laplacianAtlas[i].astype(np.float)
     cv2.normalize(laplacianAtlas[i], laplacianAtlas[i], 255, 0, cv2.NORM_MINMAX)
-
-  # Load the original image
-  im = imageio.mimread(imageio.core.urlopen(gifURL).read(), '.gif')
 
   index = 0
   curImage = im[0]
