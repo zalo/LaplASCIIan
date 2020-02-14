@@ -56,6 +56,7 @@
             svgPreview.download = "drawingExport.svg";
             svgPreview.href = "data:image/svg+xml;utf8," + encodeURIComponent(data);
             svgPreview.innerHTML = data;
+            svgPreview.style.textDecoration = "none";
 
             // Append it to the preview container box...
             document.querySelector('.result').appendChild(svgPreview);
