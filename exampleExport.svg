@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="480" height="360">
+  <text id="Frame-0" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                     __,,_                      </tspan>
+    <tspan dy="1.2em" x="0">                                              _,=*"`      `,                    </tspan>
+    <tspan dy="1.2em" x="0">                                            ,"`  /^*,      `                    </tspan>
+    <tspan dy="1.2em" x="0">                                         ,/`  *, *,  `\   /                     </tspan>
+    <tspan dy="1.2em" x="0">                                    _,==`  "\_  `\_`\,/` ,                      </tspan>
+    <tspan dy="1.2em" x="0">                     _*""+~,___,~=*`_*`       *,   *,   /                       </tspan>
+    <tspan dy="1.2em" x="0">                     ^,          _/"   ,**,     "\_  `*`                        </tspan>
+    <tspan dy="1.2em" x="0">                        \,     ,*    ."    ",      **                           </tspan>
+    <tspan dy="1.2em" x="0">                          *,_/`    _  `\,   /"   /"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _+*""\   \_ *,   "*`  ,*`*                              </tspan>
+    <tspan dy="1.2em" x="0">                        ",     *,  *, `+    /"  `                               </tspan>
+    <tspan dy="1.2em" x="0">                          /\_    "\  `   ,*`   `                                </tspan>
+    <tspan dy="1.2em" x="0">                         /   ^,     *, /"     *                                 </tspan>
+    <tspan dy="1.2em" x="0">                     _~***     `\,   ,`\,                                       </tspan>
+    <tspan dy="1.2em" x="0">                    \`      *-*`  *~~    *,    *                                </tspan>
+    <tspan dy="1.2em" x="0">                     \     *                \,,/`                               </tspan>
+    <tspan dy="1.2em" x="0">                  \"\   `                                                       </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-1" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                    ___,.,                      </tspan>
+    <tspan dy="1.2em" x="0">                                              _,=*``      `;                    </tspan>
+    <tspan dy="1.2em" x="0">                                            ,|  ;` ",      `                    </tspan>
+    <tspan dy="1.2em" x="0">                                         ,/`  *, *.  `\   /                     </tspan>
+    <tspan dy="1.2em" x="0">                                    _,+="  "\_  `\,`**`  ,                      </tspan>
+    <tspan dy="1.2em" x="0">                      /""+~,___,~=*`,*`       *,   ^,   /                       </tspan>
+    <tspan dy="1.2em" x="0">                      \          _/"  ,* *,     `\_  `*`                        </tspan>
+    <tspan dy="1.2em" x="0">                        *,     ,*    \     "\      **                           </tspan>
+    <tspan dy="1.2em" x="0">                          `._/`   \,   *, _/`    /,                             </tspan>
+    <tspan dy="1.2em" x="0">                        _+*`"\_ `\, "\   ``   ,*`*                              </tspan>
+    <tspan dy="1.2em" x="0">                        ^=     *,  "\ `     /" ,`                               </tspan>
+    <tspan dy="1.2em" x="0">                         ,*\,    `\_     ,*`   `                                </tspan>
+    <tspan dy="1.2em" x="0">                        /    "\     *, /"     *                                 </tspan>
+    <tspan dy="1.2em" x="0">                      _,,       *,   , *,                                       </tspan>
+    <tspan dy="1.2em" x="0">                    ,`     _  ,/` `~~`   `.    *,                               </tspan>
+    <tspan dy="1.2em" x="0">                    ^,    ,                 *../                                </tspan>
+    <tspan dy="1.2em" x="0">                  ,~  `"`                                                       </tspan>
+    <tspan dy="1.2em" x="0">                   `                                                            </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-2" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                    __,~~,_                     </tspan>
+    <tspan dy="1.2em" x="0">                                              _,=;_`       \                    </tspan>
+    <tspan dy="1.2em" x="0">                                            ,|  |  "\      `                    </tspan>
+    <tspan dy="1.2em" x="0">                                         ,/`  *\ "~_ `/   /                     </tspan>
+    <tspan dy="1.2em" x="0">                                     _;/`  `\,  `\, ``   ,                      </tspan>
+    <tspan dy="1.2em" x="0">                      ,*"+~,___,,=*"_*`__     ^,   "\   /                       </tspan>
+    <tspan dy="1.2em" x="0">                      \_         _/" ,"  *,     `\,  `*`                        </tspan>
+    <tspan dy="1.2em" x="0">                        *,     ,*`  `\     ";      ^*                           </tspan>
+    <tspan dy="1.2em" x="0">                          `\_/` _ *,   *,_/`    _//                             </tspan>
+    <tspan dy="1.2em" x="0">                        _+*`"\_  *, "\_       ,*,`                              </tspan>
+    <tspan dy="1.2em" x="0">                        ^\_    *,  "\      _/` ,`                               </tspan>
+    <tspan dy="1.2em" x="0">                        ,+**,    `\_     ,*    `                                </tspan>
+    <tspan dy="1.2em" x="0">                       /     "\_    *,_/`     |                                 </tspan>
+    <tspan dy="1.2em" x="0">                      *         *,   , *,     *                                 </tspan>
+    <tspan dy="1.2em" x="0">                    ,*`        ,* `~~`   `\    "                                </tspan>
+    <tspan dy="1.2em" x="0">                    |     ***"`             *~~*                                </tspan>
+    <tspan dy="1.2em" x="0">                      "*`                                                       </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-3" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                    __,~~,_                     </tspan>
+    <tspan dy="1.2em" x="0">                                              __ *,        \                    </tspan>
+    <tspan dy="1.2em" x="0">                                            ,| *,  `\_     *                    </tspan>
+    <tspan dy="1.2em" x="0">                                         ,=_  "\_`\__/    ;                     </tspan>
+    <tspan dy="1.2em" x="0">                                     __+"  `\,   *,      ,                      </tspan>
+    <tspan dy="1.2em" x="0">                       =*+._____,~="|*,=,     "\   "\_  /                       </tspan>
+    <tspan dy="1.2em" x="0">                      |_         _/"/"   *,     `\,   *`                        </tspan>
+    <tspan dy="1.2em" x="0">                        *.     ,*_  `\     /       "*                           </tspan>
+    <tspan dy="1.2em" x="0">                          `\_/`~_ *,   *,*`     ,*`                             </tspan>
+    <tspan dy="1.2em" x="0">                        _+*``\,  *, `\        /",`                              </tspan>
+    <tspan dy="1.2em" x="0">                         \_    ",  `       ,*` /                                </tspan>
+    <tspan dy="1.2em" x="0">                        _,+*,    `\,     /"   ,                                 </tspan>
+    <tspan dy="1.2em" x="0">                      _*     `\_    ".,*`     ;                                 </tspan>
+    <tspan dy="1.2em" x="0">                      |         *.    `*.     \                                 </tspan>
+    <tspan dy="1.2em" x="0">                    _+*        ,`  *~`   `\    *                                </tspan>
+    <tspan dy="1.2em" x="0">                    |    *~~~*`             ***                                 </tspan>
+    <tspan dy="1.2em" x="0">                     "**`                                                       </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-4" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                    __,~~._                     </tspan>
+    <tspan dy="1.2em" x="0">                                                 *|        |                    </tspan>
+    <tspan dy="1.2em" x="0">                                           _,| *,  `\      *                    </tspan>
+    <tspan dy="1.2em" x="0">                                         ,=_  "\_`\,/`    ,                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _/"  `*,   *,      ,`                     </tspan>
+    <tspan dy="1.2em" x="0">                       _,~,_    __~+||*\,     "\_  "\_  /                       </tspan>
+    <tspan dy="1.2em" x="0">                       ,     ``  _/|`    ^.      *,   *`                        </tspan>
+    <tspan dy="1.2em" x="0">                        *,     ,*_  `\,   /`      ,`*                           </tspan>
+    <tspan dy="1.2em" x="0">                           \,/^\_ *,   **`      /,                              </tspan>
+    <tspan dy="1.2em" x="0">                        _+*``\,  *, `*       ,/`/                               </tspan>
+    <tspan dy="1.2em" x="0">                         \,    "\  `       ,"  *                                </tspan>
+    <tspan dy="1.2em" x="0">                         __*,     *,    ,/`   *                                 </tspan>
+    <tspan dy="1.2em" x="0">                      _/`    `\_    "\,"                                        </tspan>
+    <tspan dy="1.2em" x="0">                      |        ,*,    `*.     \                                 </tspan>
+    <tspan dy="1.2em" x="0">                     _|        *   *~`    \,   *                                </tspan>
+    <tspan dy="1.2em" x="0">                    `   *~..~*              ``                                  </tspan>
+    <tspan dy="1.2em" x="0">                    "*~*                                                        </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-5" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                    __,~~._                     </tspan>
+    <tspan dy="1.2em" x="0">                                                 *|        |                    </tspan>
+    <tspan dy="1.2em" x="0">                                           _,| *,  `       *                    </tspan>
+    <tspan dy="1.2em" x="0">                                         ,=_  "\_```      ,                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _="   *,   *,      ,`                     </tspan>
+    <tspan dy="1.2em" x="0">                                    ,  \,     "\_  `\_  /                       </tspan>
+    <tspan dy="1.2em" x="0">                        ,"``**+**"|\     ^,      *,   *`                        </tspan>
+    <tspan dy="1.2em" x="0">                        ^~     ,=,   \,,/`       ,/,*                           </tspan>
+    <tspan dy="1.2em" x="0">                           *,/"\, ",           /^,"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _+*``*,  "~         ,*`/                                </tspan>
+    <tspan dy="1.2em" x="0">                         \,    "\_        /"  ^                                 </tspan>
+    <tspan dy="1.2em" x="0">                           *,     *,   ,*`   "                                  </tspan>
+    <tspan dy="1.2em" x="0">                       _,~~\ `\,    "~"      ,                                  </tspan>
+    <tspan dy="1.2em" x="0">                     _*      ~~.".    `*.    *                                  </tspan>
+    <tspan dy="1.2em" x="0">                     |       ,     *-`    *.~"                                  </tspan>
+    <tspan dy="1.2em" x="0">                   _++/~,_,,*                                                   </tspan>
+    <tspan dy="1.2em" x="0">                   *.,*                                                         </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-6" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                    __,~~._                     </tspan>
+    <tspan dy="1.2em" x="0">                                                 *|        |                    </tspan>
+    <tspan dy="1.2em" x="0">                                           _,| *,  |       *                    </tspan>
+    <tspan dy="1.2em" x="0">                                         ,=_  "\_         ,                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _="   *,   *,      ,`                     </tspan>
+    <tspan dy="1.2em" x="0">                                    ,  \,     "\_  `\_  /                       </tspan>
+    <tspan dy="1.2em" x="0">                          =++.,,~=/\_    /       *,   *`                        </tspan>
+    <tspan dy="1.2em" x="0">                         |     ,=,   \,*`        /`"*                           </tspan>
+    <tspan dy="1.2em" x="0">                           *,/"\, ^,          ,**/"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _+*``*,  "         _/`,/`                               </tspan>
+    <tspan dy="1.2em" x="0">                         \,    "\_       ,*  /                                  </tspan>
+    <tspan dy="1.2em" x="0">                          _*,     *,  _/`   /                                   </tspan>
+    <tspan dy="1.2em" x="0">                          `  `\,    "\_     |                                   </tspan>
+    <tspan dy="1.2em" x="0">                     _/`  `    ,^.    `^.                                       </tspan>
+    <tspan dy="1.2em" x="0">                     |             *-`    *"                                    </tspan>
+    <tspan dy="1.2em" x="0">                    _ \,   .`                                                   </tspan>
+    <tspan dy="1.2em" x="0">                   |_|                                                          </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-7" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                    __,~~._                     </tspan>
+    <tspan dy="1.2em" x="0">                                                 *|        |                    </tspan>
+    <tspan dy="1.2em" x="0">                                           _,| *,,/        *                    </tspan>
+    <tspan dy="1.2em" x="0">                                         ,=_  "\_         ,                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _+"  `*,   *,      ,`                     </tspan>
+    <tspan dy="1.2em" x="0">                                    , `\,     "\_  `\_  /                       </tspan>
+    <tspan dy="1.2em" x="0">                           ___  __/|    /`       *,   *`                        </tspan>
+    <tspan dy="1.2em" x="0">                          /    _|_  `+*         ,* "*                           </tspan>
+    <tspan dy="1.2em" x="0">                          `\,/^\_ *          ,*/ ,"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _+*``\,  `         /",\*`                               </tspan>
+    <tspan dy="1.2em" x="0">                         \,    "\       ,*` /"                                  </tspan>
+    <tspan dy="1.2em" x="0">                         _/*,     *,  /"   ,                                    </tspan>
+    <tspan dy="1.2em" x="0">                         `   `\,    "\_    *                                    </tspan>
+    <tspan dy="1.2em" x="0">                      ,**       ^,    `*.  ,                                    </tspan>
+    <tspan dy="1.2em" x="0">                     `      ~~*"   *-`                                          </tspan>
+    <tspan dy="1.2em" x="0">                     *,   ,*                                                    </tspan>
+    <tspan dy="1.2em" x="0">                   "\                                                           </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-8" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                    __,~~,_                     </tspan>
+    <tspan dy="1.2em" x="0">                                                 *`        \                    </tspan>
+    <tspan dy="1.2em" x="0">                                           _,| *+*`        *                    </tspan>
+    <tspan dy="1.2em" x="0">                                         ,=_  "\_         ,                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _+"  `*,   *,      ,                      </tspan>
+    <tspan dy="1.2em" x="0">                                    , `\_     "\_  "\_  /                       </tspan>
+    <tspan dy="1.2em" x="0">                                 _/|  ,/`        *,   *`                        </tspan>
+    <tspan dy="1.2em" x="0">                           ,*""\=_  `"         ,*` "*`                          </tspan>
+    <tspan dy="1.2em" x="0">                           \_/^\_ *         _//` ,"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _+*``\,           ,*,*,*`                               </tspan>
+    <tspan dy="1.2em" x="0">                         \_    "\      _/` /~"                                  </tspan>
+    <tspan dy="1.2em" x="0">                        _,**,    `\, ,*                                         </tspan>
+    <tspan dy="1.2em" x="0">                       ,`    `\_    "\_    ,                                    </tspan>
+    <tspan dy="1.2em" x="0">                      _|        *,    `*~~"                                     </tspan>
+    <tspan dy="1.2em" x="0">                    ,"         .`  *~`                                          </tspan>
+    <tspan dy="1.2em" x="0">                    ^,    /                                                     </tspan>
+    <tspan dy="1.2em" x="0">                  ,,   ``                                                       </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-9" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                    __,~~,_                     </tspan>
+    <tspan dy="1.2em" x="0">                                                 |`        \                    </tspan>
+    <tspan dy="1.2em" x="0">                                            ,| ""`         *                    </tspan>
+    <tspan dy="1.2em" x="0">                                         ,/_  "\_         ;                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _="  `\,   *,      ,                      </tspan>
+    <tspan dy="1.2em" x="0">                                    ,'`\      "\   "\_  /                       </tspan>
+    <tspan dy="1.2em" x="0">                                 _/, ,*`        `*,   *`                        </tspan>
+    <tspan dy="1.2em" x="0">                             _~,|_  `         ,/`  "*`                          </tspan>
+    <tspan dy="1.2em" x="0">                            |/^\           _/,`  /"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _+*``\_          ,*,* ,*`                               </tspan>
+    <tspan dy="1.2em" x="0">                        "\_    ^,     _/` /`/"                                  </tspan>
+    <tspan dy="1.2em" x="0">                        ,+**,    `\,,*`   *`                                    </tspan>
+    <tspan dy="1.2em" x="0">                      ,"     `\_    "\_  ,                                      </tspan>
+    <tspan dy="1.2em" x="0">                      |         *,   ,```                                       </tspan>
+    <tspan dy="1.2em" x="0">                    ,*"         * `~~`                                          </tspan>
+    <tspan dy="1.2em" x="0">                    |    ,~~~*"                                                 </tspan>
+    <tspan dy="1.2em" x="0">                     `"*`                                                       </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-10" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                    __,.~,_                     </tspan>
+    <tspan dy="1.2em" x="0">                                                _*``       ;                    </tspan>
+    <tspan dy="1.2em" x="0">                                            ,| `           `                    </tspan>
+    <tspan dy="1.2em" x="0">                                         ,/`  *\          /                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _="  `\,  `\,      ,                      </tspan>
+    <tspan dy="1.2em" x="0">                                    ,'"+      *,   "\   /                       </tspan>
+    <tspan dy="1.2em" x="0">                                 _/,,*          /\_  `*`                        </tspan>
+    <tspan dy="1.2em" x="0">                               ,|_           ,/`   **                           </tspan>
+    <tspan dy="1.2em" x="0">                            _/^+           /,`   /"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _+*""\_         ,*,"  ,*`                               </tspan>
+    <tspan dy="1.2em" x="0">                        ^\_    *,     /" /  /"                                  </tspan>
+    <tspan dy="1.2em" x="0">                         _,*,    `\,*`   ,*`                                    </tspan>
+    <tspan dy="1.2em" x="0">                      ,*`    "\_    *\,.*                                       </tspan>
+    <tspan dy="1.2em" x="0">                      `         *,   ,`                                         </tspan>
+    <tspan dy="1.2em" x="0">                    _,+        /  `~~`                                          </tspan>
+    <tspan dy="1.2em" x="0">                    `    ~..~*`                                                 </tspan>
+    <tspan dy="1.2em" x="0">                     *+*`                                                       </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-11" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                    ___,.,                      </tspan>
+    <tspan dy="1.2em" x="0">                                               _+*``      `,                    </tspan>
+    <tspan dy="1.2em" x="0">                                            ,"             `                    </tspan>
+    <tspan dy="1.2em" x="0">                                         ,/`  *,          /                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _="  "\_  `\_      ,                      </tspan>
+    <tspan dy="1.2em" x="0">                                    ,_/       *,   *,   /                       </tspan>
+    <tspan dy="1.2em" x="0">                                 _/="          /^\_  `*`                        </tspan>
+    <tspan dy="1.2em" x="0">                               ,|`          ,/`    **`                          </tspan>
+    <tspan dy="1.2em" x="0">                            _/*           /,`    /"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _+*""\_        ,*/`   ,*`                               </tspan>
+    <tspan dy="1.2em" x="0">                        ^\     *,    /" *   /"                                  </tspan>
+    <tspan dy="1.2em" x="0">                          ,\,    "~/`  / ,*`                                    </tspan>
+    <tspan dy="1.2em" x="0">                      _+"``  ",     **` "                                       </tspan>
+    <tspan dy="1.2em" x="0">                     \`        _*,   ,`                                         </tspan>
+    <tspan dy="1.2em" x="0">                     "_       ,   ^~~`                                          </tspan>
+    <tspan dy="1.2em" x="0">                   ,"  \.,,,~*                                                  </tspan>
+    <tspan dy="1.2em" x="0">                    *~~"                                                        </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-12" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                     __,,_                      </tspan>
+    <tspan dy="1.2em" x="0">                                               ,+*"`      `,                    </tspan>
+    <tspan dy="1.2em" x="0">                                            ,"`            `                    </tspan>
+    <tspan dy="1.2em" x="0">                                         ,/`  *,          /                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _="  "\_  "\_      ,                      </tspan>
+    <tspan dy="1.2em" x="0">                                    _*`       *,   *,   /                       </tspan>
+    <tspan dy="1.2em" x="0">                                 _/"          /""\_  `*`                        </tspan>
+    <tspan dy="1.2em" x="0">                               ,*`         ,/`     **`                          </tspan>
+    <tspan dy="1.2em" x="0">                            _/"          ~*`     /"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _+*"*=_       ,*/     ,*`                               </tspan>
+    <tspan dy="1.2em" x="0">                        ",    `\,   /",`    /"                                  </tspan>
+    <tspan dy="1.2em" x="0">                          |\_    "*__/`  ,*`                                    </tspan>
+    <tspan dy="1.2em" x="0">                       ,~=+. ^,     *, /"                                       </tspan>
+    <tspan dy="1.2em" x="0">                     ,`       ,`\,   ,`                                         </tspan>
+    <tspan dy="1.2em" x="0">                     |            *~~`                                          </tspan>
+    <tspan dy="1.2em" x="0">                   ,**\._  ,/`                                                  </tspan>
+    <tspan dy="1.2em" x="0">                   *.,/                                                         </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-13" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                     __,,_                      </tspan>
+    <tspan dy="1.2em" x="0">                                               ,+*"`      ",                    </tspan>
+    <tspan dy="1.2em" x="0">                                            ,"`            `                    </tspan>
+    <tspan dy="1.2em" x="0">                                         _/` `*,          /                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _="  *\   "\_      ,                      </tspan>
+    <tspan dy="1.2em" x="0">                                    ,*`      `\,   *,   /                       </tspan>
+    <tspan dy="1.2em" x="0">                                 _/"         /" ",   "*`                        </tspan>
+    <tspan dy="1.2em" x="0">                               ,*`        ,/`     `**`                          </tspan>
+    <tspan dy="1.2em" x="0">                            _/"         ,*       /"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _~*"*,       ,*"      ,*`                               </tspan>
+    <tspan dy="1.2em" x="0">                        *,    `\,  /"/      /"                                  </tspan>
+    <tspan dy="1.2em" x="0">                          |\_    *\*`    ,*`                                    </tspan>
+    <tspan dy="1.2em" x="0">                        __|  *,    `\, /"                                       </tspan>
+    <tspan dy="1.2em" x="0">                     ,"`       `\    ,`                                         </tspan>
+    <tspan dy="1.2em" x="0">                     `            *.~                                           </tspan>
+    <tspan dy="1.2em" x="0">                   __".    ,'                                                   </tspan>
+    <tspan dy="1.2em" x="0">                   \_|                                                          </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-14" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                     __,__                      </tspan>
+    <tspan dy="1.2em" x="0">                                               ,+*"``     \                     </tspan>
+    <tspan dy="1.2em" x="0">                                           __"`            `                    </tspan>
+    <tspan dy="1.2em" x="0">                                         _/` "\_          /                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _="  *,   *,       /                      </tspan>
+    <tspan dy="1.2em" x="0">                                    ,*`      ,\_  `\_   /                       </tspan>
+    <tspan dy="1.2em" x="0">                                 _/"      _/"   *,   *~`                        </tspan>
+    <tspan dy="1.2em" x="0">                               ,*`      ,*`       `\*                           </tspan>
+    <tspan dy="1.2em" x="0">                            _/"      ,/"         ~"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _~+"\_    ,*/`        ,*`                               </tspan>
+    <tspan dy="1.2em" x="0">                        \,    "\/|"         /"                                  </tspan>
+    <tspan dy="1.2em" x="0">                         _/,     *,      ,*`                                    </tspan>
+    <tspan dy="1.2em" x="0">                        /   `\,    "\_ /"                                       </tspan>
+    <tspan dy="1.2em" x="0">                      _/       ",    ,                                          </tspan>
+    <tspan dy="1.2em" x="0">                    /`        ,*  *./                                           </tspan>
+    <tspan dy="1.2em" x="0">                    \_    ,                                                     </tspan>
+    <tspan dy="1.2em" x="0">                  ,,  "*"`                                                      </tspan>
+    <tspan dy="1.2em" x="0">                   `                                                            </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-15" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                     _____                      </tspan>
+    <tspan dy="1.2em" x="0">                                               _~*"``     \                     </tspan>
+    <tspan dy="1.2em" x="0">                                           __"`            `                    </tspan>
+    <tspan dy="1.2em" x="0">                                         _/` "\_          *                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _=" `*,   *,       /                      </tspan>
+    <tspan dy="1.2em" x="0">                                    ,*`     ,/\_  "\_   /                       </tspan>
+    <tspan dy="1.2em" x="0">                                 _/"     _/"    *,   *~`                        </tspan>
+    <tspan dy="1.2em" x="0">                               ,*`    ,~*`        "~*                           </tspan>
+    <tspan dy="1.2em" x="0">                            _/"    ,/|*          ~"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _~+^\, _/",/`         ,*`                               </tspan>
+    <tspan dy="1.2em" x="0">                        \_    "\~"          /`                                  </tspan>
+    <tspan dy="1.2em" x="0">                        _~*,     \,      ,*`                                    </tspan>
+    <tspan dy="1.2em" x="0">                      _/    `\_    "\  /"                                       </tspan>
+    <tspan dy="1.2em" x="0">                      |        *,    ,                                          </tspan>
+    <tspan dy="1.2em" x="0">                    ,"`        ,` \,/                                           </tspan>
+    <tspan dy="1.2em" x="0">                    ,     *+**`                                                 </tspan>
+    <tspan dy="1.2em" x="0">                     ****                                                       </tspan>
+    <tspan dy="1.2em" x="0">                  "                                                             </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-16" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                      ___                       </tspan>
+    <tspan dy="1.2em" x="0">                                               _~*"``     \                     </tspan>
+    <tspan dy="1.2em" x="0">                                           __"`                                 </tspan>
+    <tspan dy="1.2em" x="0">                                         _/` "\_          *                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _=" `\,   *,       /                      </tspan>
+    <tspan dy="1.2em" x="0">                                    ,*`    ,*"\   "\_  /                        </tspan>
+    <tspan dy="1.2em" x="0">                                 _/"    ,/"    `\,   *~`                        </tspan>
+    <tspan dy="1.2em" x="0">                               ,*`  _,*/`         "~*                           </tspan>
+    <tspan dy="1.2em" x="0">                            _/"_,~*"/"           ~"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _~+^\_*` ,/`         ."/                                </tspan>
+    <tspan dy="1.2em" x="0">                        \_    "\"          *,'                                  </tspan>
+    <tspan dy="1.2em" x="0">                        _,*,    `\,      \*`                                    </tspan>
+    <tspan dy="1.2em" x="0">                      ,"    `\_    ^,  /"                                       </tspan>
+    <tspan dy="1.2em" x="0">                     \         *,    ,                                          </tspan>
+    <tspan dy="1.2em" x="0">                    _~~        , `\,/                                           </tspan>
+    <tspan dy="1.2em" x="0">                   \     ,,,,~"                                                 </tspan>
+    <tspan dy="1.2em" x="0">                    "~~~`                                                       </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-17" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                      ___                       </tspan>
+    <tspan dy="1.2em" x="0">                                               _~*"``     \                     </tspan>
+    <tspan dy="1.2em" x="0">                                           __*`                                 </tspan>
+    <tspan dy="1.2em" x="0">                                         _/` *\_          `                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _=" `=,  `\,      _/                      </tspan>
+    <tspan dy="1.2em" x="0">                                    ,*`   ,*`^,   "\                            </tspan>
+    <tspan dy="1.2em" x="0">                                 _/"  _~*"     `\,  `\/`                        </tspan>
+    <tspan dy="1.2em" x="0">                               ,*`_,+"/`          ^~*                           </tspan>
+    <tspan dy="1.2em" x="0">                            __/""` ,*         _  ~"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _,=^=_  ,/`         /` /`                               </tspan>
+    <tspan dy="1.2em" x="0">                        \_    *|           *,                                   </tspan>
+    <tspan dy="1.2em" x="0">                          *,    `\_   _ "+*`                                    </tspan>
+    <tspan dy="1.2em" x="0">                      ,/"`  "\_    *,  /"                                       </tspan>
+    <tspan dy="1.2em" x="0">                     |         *,    ,`                                         </tspan>
+    <tspan dy="1.2em" x="0">                     |_        ` `\,/                                           </tspan>
+    <tspan dy="1.2em" x="0">                   /`   ,_ _,*                                                  </tspan>
+    <tspan dy="1.2em" x="0">                   ^~,.*                                                        </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-18" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                      ___                       </tspan>
+    <tspan dy="1.2em" x="0">                                               _~+""`    `\                     </tspan>
+    <tspan dy="1.2em" x="0">                                            _*`           ,                     </tspan>
+    <tspan dy="1.2em" x="0">                                         _/` *\           "                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _/" "=,  `\,     ..*                      </tspan>
+    <tspan dy="1.2em" x="0">                                    ,*`  ,*` *,   ",  \                         </tspan>
+    <tspan dy="1.2em" x="0">                                 _/" ,+|*      `\_  `\/                         </tspan>
+    <tspan dy="1.2em" x="0">                              __|,=*_/`           *,*                           </tspan>
+    <tspan dy="1.2em" x="0">                           _*`    ,*         ,,  /"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _,+^=_ _/`         /`  /`                               </tspan>
+    <tspan dy="1.2em" x="0">                        \_    *,           *,                                   </tspan>
+    <tspan dy="1.2em" x="0">                          *,    `\_   , "~*`                                    </tspan>
+    <tspan dy="1.2em" x="0">                      _,=+* "\_    *,  /"/                                      </tspan>
+    <tspan dy="1.2em" x="0">                     /`        *,    /`*`                                       </tspan>
+    <tspan dy="1.2em" x="0">                     |        `  `\ /                                           </tspan>
+    <tspan dy="1.2em" x="0">                   ,**\,    .`                                                  </tspan>
+    <tspan dy="1.2em" x="0">                   \__/                                                         </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-19" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                      ___                       </tspan>
+    <tspan dy="1.2em" x="0">                                               _~+""`    `\                     </tspan>
+    <tspan dy="1.2em" x="0">                                            _*`           ,                     </tspan>
+    <tspan dy="1.2em" x="0">                                         _/` *\           `                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _/" "\_  `\,    +*.*                      </tspan>
+    <tspan dy="1.2em" x="0">                                    ,*`_~*`  *,   ^, '.                         </tspan>
+    <tspan dy="1.2em" x="0">                                 _/_,=|*`      `\_  `\/                         </tspan>
+    <tspan dy="1.2em" x="0">                           _~=~+**`_/`            *,*                           </tspan>
+    <tspan dy="1.2em" x="0">                          |_     ,*`        ,*,  /"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _,+*\,_/`         /`   /`                               </tspan>
+    <tspan dy="1.2em" x="0">                        \_    *,       ,   *,                                   </tspan>
+    <tspan dy="1.2em" x="0">                          *,    "\_  +, ",*`                                    </tspan>
+    <tspan dy="1.2em" x="0">                       ___| "\     *,  /" ;                                     </tspan>
+    <tspan dy="1.2em" x="0">                     /"      _ *,    /*,_/`                                     </tspan>
+    <tspan dy="1.2em" x="0">                             ,   `. /                                           </tspan>
+    <tspan dy="1.2em" x="0">                   _,|,    ,*                                                   </tspan>
+    <tspan dy="1.2em" x="0">                   _ ,   `                                                      </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-20" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                      ___                       </tspan>
+    <tspan dy="1.2em" x="0">                                               _~+*"`    `\                     </tspan>
+    <tspan dy="1.2em" x="0">                                            _*`           ,                     </tspan>
+    <tspan dy="1.2em" x="0">                                         _/` *,           `                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _/" |\_  `\_   /"*./                      </tspan>
+    <tspan dy="1.2em" x="0">                                    ,*_~*"   *,   ^, *.                         </tspan>
+    <tspan dy="1.2em" x="0">                                 _;|*|*`       `\_  `\/                         </tspan>
+    <tspan dy="1.2em" x="0">                          /``""`` _/"             *,*                           </tspan>
+    <tspan dy="1.2em" x="0">                         ^\     ,*`        ,**,  /"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _,+*\_/"         /`    /`                               </tspan>
+    <tspan dy="1.2em" x="0">                        \_    *,      ~,   *,                                   </tspan>
+    <tspan dy="1.2em" x="0">                          *,    "\_  \, ",*`                                    </tspan>
+    <tspan dy="1.2em" x="0">                         ;` "\     *,  /"  ,                                    </tspan>
+    <tspan dy="1.2em" x="0">                     ,*"""     *,    /*,   /                                    </tspan>
+    <tspan dy="1.2em" x="0">                    |       *"`  `. /   ``                                      </tspan>
+    <tspan dy="1.2em" x="0">                     \     /                                                    </tspan>
+    <tspan dy="1.2em" x="0">                  |`"  `"`                                                      </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-21" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                      ___                       </tspan>
+    <tspan dy="1.2em" x="0">                                               _~+""`    `\                     </tspan>
+    <tspan dy="1.2em" x="0">                                            _*`           ,                     </tspan>
+    <tspan dy="1.2em" x="0">                                         _/` *\           `                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _/"_/\_  `\,  |` ^.*                      </tspan>
+    <tspan dy="1.2em" x="0">                                    ,|+|*    *,   ^, *.                         </tspan>
+    <tspan dy="1.2em" x="0">                          _,_____~+"_/^        `\_  `\/                         </tspan>
+    <tspan dy="1.2em" x="0">                        ,`        ,*`             *,*                           </tspan>
+    <tspan dy="1.2em" x="0">                         "\    _/`        ,* *,  ~"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _,+*\,*          \     /`                               </tspan>
+    <tspan dy="1.2em" x="0">                        \_    *,      *,   *                                    </tspan>
+    <tspan dy="1.2em" x="0">                         _*,    `\_ `\, ";*``                                   </tspan>
+    <tspan dy="1.2em" x="0">                        /`  "\     *,  /"  *                                    </tspan>
+    <tspan dy="1.2em" x="0">                     _,~|      *,    /*,    ;                                   </tspan>
+    <tspan dy="1.2em" x="0">                    /`     , ,~" `. /   `~~*                                    </tspan>
+    <tspan dy="1.2em" x="0">                    \_    ,`                                                    </tspan>
+    <tspan dy="1.2em" x="0">                  ,=, `**`                                                      </tspan>
+    <tspan dy="1.2em" x="0">                   `                                                            </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-22" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                      ___                       </tspan>
+    <tspan dy="1.2em" x="0">                                               _~+""`     \                     </tspan>
+    <tspan dy="1.2em" x="0">                                            _*`           ,                     </tspan>
+    <tspan dy="1.2em" x="0">                                         _/` *\     ___   "                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _/_+^\_  `\,  ,  "~*                      </tspan>
+    <tspan dy="1.2em" x="0">                                    _+|/`    *,   ", ".                         </tspan>
+    <tspan dy="1.2em" x="0">                        _+*+.,~~=*" ,"         `\_  `\/                         </tspan>
+    <tspan dy="1.2em" x="0">                        ,        ,/`       ,_     *,*                           </tspan>
+    <tspan dy="1.2em" x="0">                         `\    ,"        /"  *,  /"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _,+^\/`         `\     /`                               </tspan>
+    <tspan dy="1.2em" x="0">                        \_    *,    _ *,   *,,                                  </tspan>
+    <tspan dy="1.2em" x="0">                         ,*,    `\_  *, "\*`,                                   </tspan>
+    <tspan dy="1.2em" x="0">                       /`   "\_    *,  /"   ;                                   </tspan>
+    <tspan dy="1.2em" x="0">                       ,       *,    /*,    *,                                  </tspan>
+    <tspan dy="1.2em" x="0">                    /"         / `\,/   `\  ,`                                  </tspan>
+    <tspan dy="1.2em" x="0">                    \     *"``                                                  </tspan>
+    <tspan dy="1.2em" x="0">                  _  `*-*`                                                      </tspan>
+    <tspan dy="1.2em" x="0">                  "`                                                            </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-23" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                      ____                      </tspan>
+    <tspan dy="1.2em" x="0">                                               _~*"``     \                     </tspan>
+    <tspan dy="1.2em" x="0">                                           __"`                                 </tspan>
+    <tspan dy="1.2em" x="0">                                         _/` "\_   /"*,   *                     </tspan>
+    <tspan dy="1.2em" x="0">                                      _;/"`*,   *, *,  `\*                      </tspan>
+    <tspan dy="1.2em" x="0">                        __       _,+*_/`     "\_  "\_`\                         </tspan>
+    <tspan dy="1.2em" x="0">                      ,`   `"""`  _/"           *,   *~`                        </tspan>
+    <tspan dy="1.2em" x="0">                       *.       ,*`      ,*\_     "~*                           </tspan>
+    <tspan dy="1.2em" x="0">                          \,  /"       /`    *,  ,"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _~+*\,      ._  `\,   , /                               </tspan>
+    <tspan dy="1.2em" x="0">                        \_    ",   \_ *,   *,",`                                </tspan>
+    <tspan dy="1.2em" x="0">                         _*,    `\,  *, `\*`  `                                 </tspan>
+    <tspan dy="1.2em" x="0">                      ,"`   `\_    "\  |"    |                                  </tspan>
+    <tspan dy="1.2em" x="0">                     ;         *,    ,*,     *                                  </tspan>
+    <tspan dy="1.2em" x="0">                    _/         /  \,/    \,   |                                 </tspan>
+    <tspan dy="1.2em" x="0">                   ;`   ,,_,,/`            ^**                                  </tspan>
+    <tspan dy="1.2em" x="0">                    *~~*`                                                       </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-24" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                     _____                      </tspan>
+    <tspan dy="1.2em" x="0">                                               _+*"``     \                     </tspan>
+    <tspan dy="1.2em" x="0">                                           __"`            `                    </tspan>
+    <tspan dy="1.2em" x="0">                                          /` "\_  ;` *,   *                     </tspan>
+    <tspan dy="1.2em" x="0">                                     _,//` *,   *, "\  `\/                      </tspan>
+    <tspan dy="1.2em" x="0">                       ,~,_    __,+*"/"      "\_  `\_`**                        </tspan>
+    <tspan dy="1.2em" x="0">                      |           ,/`           *,   *~`                        </tspan>
+    <tspan dy="1.2em" x="0">                       ^.       /"      ,*`\_     "~*                           </tspan>
+    <tspan dy="1.2em" x="0">                          *, ,/`       \_    "\  ,*                             </tspan>
+    <tspan dy="1.2em" x="0">                        _~+"*,      \,   *,  /,*/                               </tspan>
+    <tspan dy="1.2em" x="0">                        \_    "\_ `\, ",   "/" /                                </tspan>
+    <tspan dy="1.2em" x="0">                          *,     *,  ", `,*`  /                                 </tspan>
+    <tspan dy="1.2em" x="0">                      _+"`` `\,    "\_ /"                                       </tspan>
+    <tspan dy="1.2em" x="0">                     /`        "~    ,^~      ,                                 </tspan>
+    <tspan dy="1.2em" x="0">                     |        ,   *./    *,    ,                                </tspan>
+    <tspan dy="1.2em" x="0">                   ;` `.,  _,*             ^~~*                                 </tspan>
+    <tspan dy="1.2em" x="0">                   ^~,.*                                                        </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-25" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                     __,,_                      </tspan>
+    <tspan dy="1.2em" x="0">                                               ,+*"`      *,                    </tspan>
+    <tspan dy="1.2em" x="0">                                           __"`    __      `                    </tspan>
+    <tspan dy="1.2em" x="0">                                         _/` `\,  ,  ",   /                     </tspan>
+    <tspan dy="1.2em" x="0">                                     _,;*  *,   ", "\_  ,,                      </tspan>
+    <tspan dy="1.2em" x="0">                      ,+*~______,+*"_/"      `\_  `\, ``/                       </tspan>
+    <tspan dy="1.2em" x="0">                      ,           ,*`    __     *,   "~`                        </tspan>
+    <tspan dy="1.2em" x="0">                       `\      _/`     ,*  *,     `\*                           </tspan>
+    <tspan dy="1.2em" x="0">                          *, ,*       `\_    `;  /*                             </tspan>
+    <tspan dy="1.2em" x="0">                        _~*"*,    _ *,   *,_/`,*,`                              </tspan>
+    <tspan dy="1.2em" x="0">                        *,    `\_  *, "\_   /" /                                </tspan>
+    <tspan dy="1.2em" x="0">                          |\_    *,  "\  ,*`  ,                                 </tspan>
+    <tspan dy="1.2em" x="0">                       ,~++  *,    `\_ /"     `                                 </tspan>
+    <tspan dy="1.2em" x="0">                     /`       _"\    ,`~      \                                 </tspan>
+    <tspan dy="1.2em" x="0">                     |            *./    *,    \                                </tspan>
+    <tspan dy="1.2em" x="0">                   ,**\,    /`             `~,.*                                </tspan>
+    <tspan dy="1.2em" x="0">                   *,,/                                                         </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <text id="Frame-26" font-family="monospace" visibility="hidden">
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                     __,,_                      </tspan>
+    <tspan dy="1.2em" x="0">                                               ,+*"`      ",                    </tspan>
+    <tspan dy="1.2em" x="0">                                           _,"`   ~~,      `                    </tspan>
+    <tspan dy="1.2em" x="0">                                         _/` `*, *,  "\_  /                     </tspan>
+    <tspan dy="1.2em" x="0">                                    _,++"  *\   "\_"\_ / ,                      </tspan>
+    <tspan dy="1.2em" x="0">                      ,**+,____,~=*`_/`      `\,   *,   /                       </tspan>
+    <tspan dy="1.2em" x="0">                     ^,           ="    ,~_     "~   "~`                        </tspan>
+    <tspan dy="1.2em" x="0">                       `\      ,/`    ,"   *,     `\*                           </tspan>
+    <tspan dy="1.2em" x="0">                          *. ,"    _  `\_    /   ,"                             </tspan>
+    <tspan dy="1.2em" x="0">                        _~*"*,   ~_ *,   *,/` ,/`*                              </tspan>
+    <tspan dy="1.2em" x="0">                        *,    `\,  *, `\    ,* ,`                               </tspan>
+    <tspan dy="1.2em" x="0">                          |\_    ^,  `~  ,/`   `                                </tspan>
+    <tspan dy="1.2em" x="0">                        __|  *,    `\, ,*     |                                 </tspan>
+    <tspan dy="1.2em" x="0">                     ,"    `,,,`\    ,`\      *                                 </tspan>
+    <tspan dy="1.2em" x="0">                     `            *~~    *,    \                                </tspan>
+    <tspan dy="1.2em" x="0">                   _,|,    ,*              `\,,/                                </tspan>
+    <tspan dy="1.2em" x="0">                   \_,                                                          </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+    <tspan dy="1.2em" x="0">                                                                                </tspan>
+  </text>
+  <style type="text/css">
+    @keyframes flash { 0%                   { visibility: visible; }
+                       3.7037037037037037%  { visibility: hidden;  } }
+    #Frame-0 { animation: flash 0.9s linear infinite 0.0s;   }
+    #Frame-1 { animation: flash 0.9s linear infinite 0.03333333333333333s;   }
+    #Frame-2 { animation: flash 0.9s linear infinite 0.06666666666666667s;   }
+    #Frame-3 { animation: flash 0.9s linear infinite 0.1s;   }
+    #Frame-4 { animation: flash 0.9s linear infinite 0.13333333333333333s;   }
+    #Frame-5 { animation: flash 0.9s linear infinite 0.16666666666666666s;   }
+    #Frame-6 { animation: flash 0.9s linear infinite 0.2s;   }
+    #Frame-7 { animation: flash 0.9s linear infinite 0.23333333333333334s;   }
+    #Frame-8 { animation: flash 0.9s linear infinite 0.26666666666666666s;   }
+    #Frame-9 { animation: flash 0.9s linear infinite 0.3s;   }
+    #Frame-10 { animation: flash 0.9s linear infinite 0.3333333333333333s;   }
+    #Frame-11 { animation: flash 0.9s linear infinite 0.36666666666666664s;   }
+    #Frame-12 { animation: flash 0.9s linear infinite 0.4s;   }
+    #Frame-13 { animation: flash 0.9s linear infinite 0.43333333333333335s;   }
+    #Frame-14 { animation: flash 0.9s linear infinite 0.4666666666666667s;   }
+    #Frame-15 { animation: flash 0.9s linear infinite 0.5s;   }
+    #Frame-16 { animation: flash 0.9s linear infinite 0.5333333333333333s;   }
+    #Frame-17 { animation: flash 0.9s linear infinite 0.5666666666666667s;   }
+    #Frame-18 { animation: flash 0.9s linear infinite 0.6s;   }
+    #Frame-19 { animation: flash 0.9s linear infinite 0.6333333333333333s;   }
+    #Frame-20 { animation: flash 0.9s linear infinite 0.6666666666666666s;   }
+    #Frame-21 { animation: flash 0.9s linear infinite 0.7s;   }
+    #Frame-22 { animation: flash 0.9s linear infinite 0.7333333333333333s;   }
+    #Frame-23 { animation: flash 0.9s linear infinite 0.7666666666666666s;   }
+    #Frame-24 { animation: flash 0.9s linear infinite 0.8s;   }
+    #Frame-25 { animation: flash 0.9s linear infinite 0.8333333333333334s;   }
+    #Frame-26 { animation: flash 0.9s linear infinite 0.8666666666666667s;   }
+  </style>
+</svg>
