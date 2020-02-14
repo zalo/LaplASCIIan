@@ -2,9 +2,5 @@
   "version": 2,
   "name": "api",
   "public": true,
-  "builds": [{ "src": "api/index.py", "use": "@now/python" }],
-  "routes": [
-    { "src": "/", "dest": "api/index.py" },
-    { "src": "/index", "dest": "api/index.py" }
-  ]
+  "builds": [{ "src": "api/index.py", "use": "@now/python" }]
 }
