@@ -32,8 +32,8 @@
         let jsonToPost = JSON.stringify({
            "gifURL": document.getElementById("gifURL").value, 
            "alphanumerics": true, 
-           "density": 25, 
-           "font_size_y": 45,
+           "density": 15, 
+           "font_size_y": document.getElementById("textSize").value,
            "starting_frame": 0
         });
 
@@ -63,6 +63,7 @@
 
           <!-- <label for="gifURL">gif URL:</label> -->
           <input type="text" id="gifURL" name="gifURL" value="https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif">
+          <input type="number" id="textSize" name="textSize" value="45" min="5" max="60">
           <input type="button" value="Convert" onclick="convertGif()">
 
           <p class="result">Your converted SVG will appear here...</p>
