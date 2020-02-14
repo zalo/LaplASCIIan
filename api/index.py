@@ -29,21 +29,20 @@ def convertGifToASCII(im, font_size_y = 20, alphanumerics = False, density = 25)
     asciiCharacters += "?#$%&@0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()[]]{}" #<> # SVG Incompatible...
   font_size_x = int(font_size_y * 0.45)
   consolas = ImageFont.truetype("./Consolas.ttf", int(font_size_y * 0.8))
-  print("Hi!  I can also output data!")
-  return "Consolas Loaded!"
-  #asciiAtlas     = np.zeros((len(asciiCharacters), font_size_y, font_size_x), dtype=np.uint8)
-  #laplacianAtlas = np.zeros(asciiAtlas.shape, dtype=np.uint8)
-  #for i in range(len(asciiCharacters)):
-  #  # Make into PIL Image
-  #  im_p = Image.fromarray(asciiAtlas[i])
-  #  draw = ImageDraw.Draw(im_p)
-  #  draw.text((0, 3), asciiCharacters[i], (255), font=consolas)
-  #  asciiAtlas[i] = np.array(im_p)
-  #  laplacianAtlas[i] = cv2.Laplacian(asciiAtlas[i], cv2.CV_8U) if laplacian else np.copy(asciiAtlas[i])
-  #  #laplacianAtlas[i] = cv2.GaussianBlur(laplacianAtlas[i], (3, 3), 0)
-  #  laplacianAtlas[i] = laplacianAtlas[i].astype(np.float)
-  #  cv2.normalize(laplacianAtlas[i], laplacianAtlas[i], 255, 0, cv2.NORM_MINMAX)
-  #
+  asciiAtlas     = np.zeros((len(asciiCharacters), font_size_y, font_size_x), dtype=np.uint8)
+  laplacianAtlas = np.zeros(asciiAtlas.shape, dtype=np.uint8)
+  for i in range(len(asciiCharacters)):
+    # Make into PIL Image
+    im_p = Image.fromarray(asciiAtlas[i])
+    draw = ImageDraw.Draw(im_p)
+    draw.text((0, 3), asciiCharacters[i], (255), font=consolas)
+    asciiAtlas[i] = np.array(im_p)
+    laplacianAtlas[i] = cv2.Laplacian(asciiAtlas[i], cv2.CV_8U) if laplacian else np.copy(asciiAtlas[i])
+    #laplacianAtlas[i] = cv2.GaussianBlur(laplacianAtlas[i], (3, 3), 0)
+    laplacianAtlas[i] = laplacianAtlas[i].astype(np.float)
+    cv2.normalize(laplacianAtlas[i], laplacianAtlas[i], 255, 0, cv2.NORM_MINMAX)
+
+  return "ASCII atlas Created!"
   #index = 0
   #curImage = im[0]
   #
