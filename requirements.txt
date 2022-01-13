@@ -1,4 +1,4 @@
 imageio==2.6.1
 numpy==1.12.1
-opencv-python==3.4.10.37
+opencv-python==3.4.0.14
 Pillow==9.0.0
