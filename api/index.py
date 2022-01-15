@@ -15,14 +15,12 @@ def getGifFrames(gifURL, font_size_y=40, framerate = 15, alphanumerics=False, de
     e1 = cv2.getTickCount()
     im = imageio.mimread(imageio.core.urlopen(gifURL).read(), '.gif')
     print( "Loading the Image finished at: "+str((cv2.getTickCount() - e1)/cv2.getTickFrequency()) +" seconds")
-    #message = "The gif you submitted loaded successfully and it has "+str(len(im))+" frames!"
+    message = "Image loaded successfully with "+str(len(im))+" frames, but something went wrong wth the conversion..."
     message = convertGifToASCII(im, font_size_y, framerate, alphanumerics, density)
   except Exception as e:
     message = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
   finally:
     return message
-
-  return message
 
 def convertGifToASCII(im, font_size_y=40, framerate = 15, alphanumerics=False, density=25):
   global e1
@@ -39,7 +37,9 @@ def convertGifToASCII(im, font_size_y=40, framerate = 15, alphanumerics=False, d
   if alphanumerics:
     asciiCharacters += "?#$%&@0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()[]]{}" #<> # SVG Incompatible...
   font_size_x = int(font_size_y * 0.45)
+  print("Loading Consolas Font...")
   consolas = ImageFont.truetype("./Consolas.ttf", int(font_size_y * 0.8))
+  print("Consolas Loaded!   Creating character atlas...")
   asciiAtlas     = np.zeros((len(asciiCharacters), font_size_y, font_size_x), dtype=np.uint8)
   laplacianAtlas = np.zeros(asciiAtlas.shape, dtype=np.uint8)
   for i in range(len(asciiCharacters)):
@@ -121,6 +121,10 @@ def convertGifToASCII(im, font_size_y=40, framerate = 15, alphanumerics=False, d
   return svgBody
   #print("Hey these work too")
   #return "We have "+str(len(asciiFrames)) +" of ASCII Art ready..."
+
+#f = open("ascii-art.svg", "wb")
+#f.write(getGifFrames("https://c.tenor.com/QBgYEJMdnfEAAAAd/theodd1sout-soccer.gif").encode())
+#f.close()
 
 class handler(BaseHTTPRequestHandler):
 
