@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+opencv-python = "==3.4.0.14"
+imageio = "==2.6.1"
+Pillow = "==8.4.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
