@@ -128,7 +128,7 @@ def convertGifToASCII(im, font_size_y=40, framerate = 15, alphanumerics=False, d
 
 app = Flask(__name__)
 
-@app.get("/", methods = ['POST'])
+@app.post("/")
 def index():
   message = "Conversion Failed for mysterious reasons... try something different?"
   try:
