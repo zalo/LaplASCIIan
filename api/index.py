@@ -44,31 +44,15 @@ def convertGifToASCII(im, font_size_y=40, framerate = 15, alphanumerics=False, d
   asciiAtlas     = np.zeros((len(asciiCharacters), font_size_y, font_size_x), dtype=np.uint8)
   laplacianAtlas = np.zeros(asciiAtlas.shape, dtype=np.uint8)
   for i in range(len(asciiCharacters)):
-    if i == 0:
-      print("About to make im_p")
     # Make into PIL Image
     im_p = Image.fromarray(asciiAtlas[i])
-    if i == 0:
-      print("About to draw im_p")
     draw = ImageDraw.Draw(im_p)
-    if i == 0:
-      print("About to draw Text")
     draw.text((0, 3), asciiCharacters[i], (255), font=consolas)
-    if i == 0:
-      print("About to set Array")
     asciiAtlas[i] = np.array(im_p)
-    if i == 0:
-      print("About to apply Laplacian")
     laplacianAtlas[i] = cv2.Laplacian(asciiAtlas[i], cv2.CV_8U) if laplacian else np.copy(asciiAtlas[i])
     #laplacianAtlas[i] = cv2.GaussianBlur(laplacianAtlas[i], (3, 3), 0)
-    if i == 0:
-      print("About to convert to float")
     floatRow = laplacianAtlas[i].astype(np.float32)
-    if i == 0:
-      print("About to normalize")
     cv2.normalize(floatRow, floatRow, 255, 0, cv2.NORM_MINMAX)
-    if i == 0:
-      print("About to apply back as uint8")
     laplacianAtlas[i] = floatRow.astype(np.uint8)
 
   print("Creating the Character Atlas finished at: " + str((cv2.getTickCount() - e1) / cv2.getTickFrequency()) + " seconds")
@@ -83,19 +67,25 @@ def convertGifToASCII(im, font_size_y=40, framerate = 15, alphanumerics=False, d
     #curImage[mask] = im[index][mask]
     curImage = im[index]
     
+    if index == 0:
+      print("About to convert frame to gray")
     # Convert To Gray
     oimg = cv2.cvtColor(curImage, cv2.COLOR_BGR2GRAY)
     
+    if index == 0:
+      print("About to apply image renormalizations")
     # These settings also control the fidelity of the output image...
     img = cv2.GaussianBlur(oimg, (blur, blur), 0)
     img = cv2.bilateralFilter(img, blur, 20, 20)
     img = cv2.Laplacian(img, cv2.CV_8U)
     img = cv2.bilateralFilter(img, blur, 200, 200)
     img = cv2.normalize(img, img, 255, 0, cv2.NORM_MINMAX)
-    img = img.astype(np.float) * (density / 255)
+    img = img.astype(np.float32) * (density / 255)
   
     finalImage = np.zeros(img.shape, dtype=np.uint8)
     
+    if index == 0:
+      print("About to convert image to string")
     # Construct a frame's string...
     outputArt = '  <text id="Frame-'+str(index)+'" font-family="monospace" visibility="hidden">\r\n'
     for y in range(int(img.shape[0] / font_size_y)):
