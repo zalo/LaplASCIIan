@@ -133,7 +133,8 @@ app = Flask(__name__)
 def index():
   message = "Conversion Failed for mysterious reasons... try something different?"
   try:
-    message += str(request)
+    message += str(request) + ", "
+    message += str(request.json)
     body = request.json
     message = getGifFrames(str(body["gifURL"]), body["font_size_y"], body["framerate"], body["alphanumerics"], body["density"])
   except Exception as e:
