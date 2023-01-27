@@ -1,12 +1,25 @@
 steps:
-- name: 'gcr.io/cloud-builders/docker'
+- id: Pull Cached Image
+  name: 'gcr.io/cloud-builders/docker'
   entrypoint: 'bash'
-  args: ['-c', 'docker pull gcr.io/$PROJECT_ID/[IMAGE_NAME]:latest || exit 0']
-- name: 'gcr.io/cloud-builders/docker'
+  args: ['-c', 'docker pull gcr.io/laplasciian/laplasciian/laplasciian:latest || exit 0']
+
+- id: Build
+  name: 'gcr.io/cloud-builders/docker'
   args: [
             'build',
-            '-t', 'gcr.io/$PROJECT_ID/[IMAGE_NAME]:latest',
-            '--cache-from', 'gcr.io/$PROJECT_ID/[IMAGE_NAME]:latest',
+            '-t', 'gcr.io/laplasciian/laplasciian/laplasciian:$COMMIT_SHA',
+            '-t', 'gcr.io/laplasciian/laplasciian/laplasciian:latest',
+            '--cache-from', 'gcr.io/laplasciian/laplasciian/laplasciian:latest',
             '.'
         ]
-images: ['gcr.io/$PROJECT_ID/[IMAGE_NAME]:latest']
+
+- id: Push Latest
+  name: gcr.io/cloud-builders/docker
+  args:
+    - push
+    - 'gcr.io/laplasciian/laplasciian/laplasciian:latest'
+
+images:
+  - 'gcr.io/laplasciian/laplasciian/laplasciian:$COMMIT_SHA'
+  - 'gcr.io/laplasciian/laplasciian/laplasciian:latest'
