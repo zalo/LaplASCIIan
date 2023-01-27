@@ -5,7 +5,7 @@ import cv2
 from PIL import ImageFont, ImageDraw, Image
 import imageio
 import codecs
-from flask import Flask, request
+from flask import Flask, request, jsonify, make_response
 
 e1 = cv2.getTickCount()
 
@@ -129,24 +129,33 @@ def convertGifToASCII(im, font_size_y=40, framerate = 15, alphanumerics=False, d
 
 app = Flask(__name__)
 
-@app.post("/")
+@app.route("/", methods=["POST", "OPTIONS"])
 def index():
-  message = "Conversion Failed for mysterious reasons... try something different?"
-  try:
-    if request.is_json:
-      print("Request is JSON!")
-      print(request.data)
-      body = request.json
-      message = getGifFrames(str(body["gifURL"]), body["font_size_y"], body["framerate"], body["alphanumerics"], body["density"])
-    else:
-      print("Request is not JSON!")
-      print(request.data)
-      message += "\n" + json.dumps(request, indent=2)
-  except Exception as e:
-    message = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
-    print(message)
-  finally:
-    return message
+  response = make_response()
+  response.headers.add("Access-Control-Allow-Origin", "*")
+  if request.method == "OPTIONS": # CORS preflight
+    response.headers.add('Access-Control-Allow-Headers', "*")
+    response.headers.add('Access-Control-Allow-Methods', "*")
+    return response
+  elif request.method == "POST": # The actual request following the preflight
+    response.data = "Conversion Failed for mysterious reasons... try something different?"
+    try:
+      if request.is_json:
+        print("Request is JSON!")
+        print(request.data)
+        body = request.json
+        response.data = getGifFrames(str(body["gifURL"]), body["font_size_y"], body["framerate"], body["alphanumerics"], body["density"])
+      else:
+        print("Request is not JSON!")
+        print(request.data)
+        response.data += "\n" + json.dumps(request, indent=2)
+    except Exception as e:
+      response.data = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
+      print(response.data)
+    finally:
+      return response.data
+  else:
+      raise RuntimeError("Weird - don't know how to handle method {}".format(request.method))
 
 if __name__ == "__main__":
   # Dev only: run "python main.py" and open http://localhost:8080

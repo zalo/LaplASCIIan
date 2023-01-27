@@ -44,7 +44,7 @@
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: jsonToPost,
-          mode: 'no-cors', // This allows me to make off-site requests...
+          //mode: 'no-cors', // This allows me to make off-site requests...
         })
           .then ((response) =>   response.text())
           .then ((data    ) => {
