@@ -1,10 +1,10 @@
-from http.server import BaseHTTPRequestHandler
 import json
 import numpy as np
 import cv2
 from PIL import ImageFont, ImageDraw, Image
 import imageio
 import codecs
+from flask import Flask, request
 
 e1 = cv2.getTickCount()
 
@@ -126,24 +126,20 @@ def convertGifToASCII(im, font_size_y=40, framerate = 15, alphanumerics=False, d
 #f.write(getGifFrames("https://c.tenor.com/QBgYEJMdnfEAAAAd/theodd1sout-soccer.gif").encode())
 #f.close()
 
-class handler(BaseHTTPRequestHandler):
+app = Flask(__name__)
 
-  def do_POST(self):
-    self.send_response(200)
-    self.send_header('Content-type','text/plain')
-    self.end_headers()
+@app.get("/", methods = ['POST'])
+def index():
+  message = "Conversion Failed for mysterious reasons... try something different?"
+  try:
+    body = request.json
+    message = getGifFrames(str(body["gifURL"]), body["font_size_y"], body["framerate"], body["alphanumerics"], body["density"])
+  except Exception as e:
+    message = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
+    print(message)
+  finally:
+    return message
 
-    message = "Conversion Failed for mysterious reasons... try something different?"
-    try:
-      # Attempt to read the body of the request
-      body = json.loads(self.rfile.read(int(self.headers.get("Content-Length"))).decode("utf-8"))
-
-      # Construct a Reponse
-      message = getGifFrames(str(body["gifURL"]), body["font_size_y"], body["framerate"], body["alphanumerics"], body["density"])
-    except Exception as e:
-      message = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
-      print(message)
-    finally:
-      self.wfile.write(message.encode())
-
-    return
+if __name__ == "__main__":
+  # Dev only: run "python main.py" and open http://localhost:8080
+  app.run(host="localhost", port=8080, debug=True)
