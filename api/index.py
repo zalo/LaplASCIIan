@@ -153,7 +153,7 @@ def index():
       response.data = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
       print(response.data)
     finally:
-      return response.data
+      return response
   else:
       raise RuntimeError("Weird - don't know how to handle method {}".format(request.method))
 
