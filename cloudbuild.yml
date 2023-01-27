@@ -1,5 +1,5 @@
 steps:
-  - id: Pull Cached Image
+  - id: Pull Cache
     name: 'gcr.io/cloud-builders/docker'
     entrypoint: 'bash'
     args: ['-c', 'docker pull $_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME:latest || exit 0']
@@ -8,7 +8,6 @@ steps:
     name: gcr.io/cloud-builders/docker
     args: [
       'build',
-      #'--no-cache',
       '-t',           '$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME:$COMMIT_SHA',
       '-t',           '$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME:latest',
       '--cache-from', '$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME:latest',
