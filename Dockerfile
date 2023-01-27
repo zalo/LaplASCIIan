@@ -1,10 +1,12 @@
-FROM debian:11-slim
+FROM python:3.8-slim-buster
 
-RUN apt-get update && apt-get install python3 python3-pip python3-numpy python3-dev libgl1 ffmpeg libsm6 libxext6  -y
+WORKDIR /app
 
-COPY ./api ./
-COPY ./requirements.txt ./
+RUN apt-get update && apt-get install libgl1 ffmpeg libsm6 libxext6  -y
 
+COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-#CMD ["/app/server"]
+COPY ./api .
+
+CMD [ "python3", "-m" , "index.py"]
