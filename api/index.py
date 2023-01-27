@@ -140,7 +140,7 @@ def index():
       message = getGifFrames(str(body["gifURL"]), body["font_size_y"], body["framerate"], body["alphanumerics"], body["density"])
     else:
       print("Request is not JSON!")
-      print(request.get_json())
+      #print(request.get_json())
       message += "\n" + json.dumps(request, indent=2)
   except Exception as e:
     message = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
