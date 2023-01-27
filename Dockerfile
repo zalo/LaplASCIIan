@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY ./api .
 
-CMD [ "flask", "run" ]
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 index:app
