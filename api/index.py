@@ -66,14 +66,10 @@ def convertGifToASCII(im, font_size_y=40, framerate = 15, alphanumerics=False, d
     #mask = im[index] != 0
     #curImage[mask] = im[index][mask]
     curImage = im[index]
-    
-    if index == 0:
-      print("About to convert frame to gray")
+
     # Convert To Gray
     oimg = cv2.cvtColor(curImage, cv2.COLOR_BGR2GRAY)
-    
-    if index == 0:
-      print("About to apply image renormalizations")
+
     # These settings also control the fidelity of the output image...
     img = cv2.GaussianBlur(oimg, (blur, blur), 0)
     img = cv2.bilateralFilter(img, blur, 20, 20)
@@ -83,9 +79,7 @@ def convertGifToASCII(im, font_size_y=40, framerate = 15, alphanumerics=False, d
     img = img.astype(np.float32) * (density / 255)
   
     finalImage = np.zeros(img.shape, dtype=np.uint8)
-    
-    if index == 0:
-      print("About to convert image to string")
+
     # Construct a frame's string...
     outputArt = '  <text id="Frame-'+str(index)+'" font-family="monospace" visibility="hidden">\r\n'
     for y in range(int(img.shape[0] / font_size_y)):
