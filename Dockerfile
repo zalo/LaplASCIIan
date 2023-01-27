@@ -5,6 +5,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install libgl1 ffmpeg libsm6 libxext6  -y
 
 COPY requirements.txt requirements.txt
+
 RUN pip install -r requirements.txt
 
 COPY ./api .
