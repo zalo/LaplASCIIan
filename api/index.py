@@ -44,14 +44,28 @@ def convertGifToASCII(im, font_size_y=40, framerate = 15, alphanumerics=False, d
   asciiAtlas     = np.zeros((len(asciiCharacters), font_size_y, font_size_x), dtype=np.uint8)
   laplacianAtlas = np.zeros(asciiAtlas.shape, dtype=np.uint8)
   for i in range(len(asciiCharacters)):
+    if i == 0:
+      print("About to make im_p")
     # Make into PIL Image
     im_p = Image.fromarray(asciiAtlas[i])
+    if i == 0:
+      print("About to draw im_p")
     draw = ImageDraw.Draw(im_p)
+    if i == 0:
+      print("About to draw Text")
     draw.text((0, 3), asciiCharacters[i], (255), font=consolas)
+    if i == 0:
+      print("About to set Array")
     asciiAtlas[i] = np.array(im_p)
+    if i == 0:
+      print("About to apply Laplacian")
     laplacianAtlas[i] = cv2.Laplacian(asciiAtlas[i], cv2.CV_8U) if laplacian else np.copy(asciiAtlas[i])
     #laplacianAtlas[i] = cv2.GaussianBlur(laplacianAtlas[i], (3, 3), 0)
+    if i == 0:
+      print("About to convert to float")
     laplacianAtlas[i] = laplacianAtlas[i].astype(np.float)
+    if i == 0:
+      print("About to normalize")
     cv2.normalize(laplacianAtlas[i], laplacianAtlas[i], 255, 0, cv2.NORM_MINMAX)
 
   print("Creating the Character Atlas finished at: " + str((cv2.getTickCount() - e1) / cv2.getTickFrequency()) + " seconds")

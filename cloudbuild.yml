@@ -2,7 +2,7 @@ steps:
   - id: Pull Cached Image
     name: 'gcr.io/cloud-builders/docker'
     entrypoint: 'bash'
-    args: ['-c', 'docker pull gcr.io/laplasciian/laplasciian/laplasciian:latest || exit 0']
+    args: ['-c', 'docker pull $_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME:latest || exit 0']
 
   - id: Build
     name: gcr.io/cloud-builders/docker
