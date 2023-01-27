@@ -1,3 +1,4 @@
+import os
 import json
 import numpy as np
 import cv2
@@ -142,4 +143,4 @@ def index():
 
 if __name__ == "__main__":
   # Dev only: run "python main.py" and open http://localhost:8080
-  app.run(host="localhost", port=8080, debug=True)
+  app.run(host="localhost", port=int(os.environ.get("PORT", 8080)), debug=True)
