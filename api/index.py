@@ -1,11 +1,10 @@
 import os
-import json
-import numpy as np
 import cv2
-from PIL import ImageFont, ImageDraw, Image
+import json
 import imageio
-import codecs
-from flask import Flask, request, jsonify, make_response
+import numpy as np
+from PIL import ImageFont, ImageDraw, Image
+from flask import Flask, request, make_response
 
 e1 = cv2.getTickCount()
 
@@ -142,17 +141,16 @@ def index():
     response.data = "Conversion Failed for mysterious reasons... try something different?"
     try:
       if request.is_json:
-        print("Request is JSON!")
-        print(request.data)
-        body = request.json
-        response.data = getGifFrames(str(body["gifURL"]), body["font_size_y"], body["framerate"], body["alphanumerics"], body["density"])
+        response.data = getGifFrames(str(request.json["gifURL"]), 
+                                     request.json["font_size_y"], 
+                                     request.json["framerate"], 
+                                     request.json["alphanumerics"], 
+                                     request.json["density"])
       else:
-        print("Request is not JSON!")
-        print(request.data)
-        response.data += "\n" + json.dumps(request, indent=2)
+        response.data = "Malformed Non-JSON Request Submitted"
     except Exception as e:
       response.data = "Conversion Failed; Error ({0}): {1}".format(e.errno, e.strerror)
-      print(response.data)
+      print("ERROR:", response.data)
     finally:
       return response
   else:
