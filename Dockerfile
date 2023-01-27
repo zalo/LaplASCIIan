@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 
 COPY ./api .
 
-CMD [ "python3", "-m" , "index.py"]
+CMD [ "python3", "index.py"]
