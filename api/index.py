@@ -63,10 +63,13 @@ def convertGifToASCII(im, font_size_y=40, framerate = 15, alphanumerics=False, d
     #laplacianAtlas[i] = cv2.GaussianBlur(laplacianAtlas[i], (3, 3), 0)
     if i == 0:
       print("About to convert to float")
-    laplacianAtlas[i] = laplacianAtlas[i].astype(np.float)
+    floatRow = laplacianAtlas[i].astype(np.float32)
     if i == 0:
       print("About to normalize")
-    cv2.normalize(laplacianAtlas[i], laplacianAtlas[i], 255, 0, cv2.NORM_MINMAX)
+    cv2.normalize(floatRow, floatRow, 255, 0, cv2.NORM_MINMAX)
+    if i == 0:
+      print("About to apply back as uint8")
+    laplacianAtlas[i] = floatRow.astype(np.uint8)
 
   print("Creating the Character Atlas finished at: " + str((cv2.getTickCount() - e1) / cv2.getTickFrequency()) + " seconds")
   
