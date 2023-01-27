@@ -50,17 +50,21 @@
           .then ((data    ) => {
             // Clear the old Preview
             document.querySelector('.result').innerHTML = '';
+            if(data.startsWith('<?xml version="1.0" encoding="utf-8"?>')){
+              // Add a new downloadable preview...
+              let svgPreview = document.createElement("a");
+              svgPreview.download = "drawingExport.svg";
+              svgPreview.href = "data:image/svg+xml;utf8," + encodeURIComponent(data);
+              svgPreview.innerHTML = data;
+              svgPreview.style.textDecoration = "none";
 
-            // Add a new downloadable preview...
-            let svgPreview = document.createElement("a");
-            svgPreview.download = "drawingExport.svg";
-            svgPreview.href = "data:image/svg+xml;utf8," + encodeURIComponent(data);
-            svgPreview.innerHTML = data;
-            svgPreview.style.textDecoration = "none";
-
-            // Append it to the preview container box...
-            document.querySelector('.result').appendChild(svgPreview);
-            document.querySelector('.result').style.color = "#000000"; 
+              // Append it to the preview container box...
+              document.querySelector('.result').appendChild(svgPreview);
+              document.querySelector('.result').style.color = "#000000";
+            } else {
+              document.querySelector('.result').textContent = data;
+              document.querySelector('.result').style.color = "#FF0000";
+            }
           })
           .catch((error   ) => { document.querySelector('.result').textContent = error; 
                                  document.querySelector('.result').style.color = "#FF0000"; })
